@@ -42,7 +42,6 @@ function init() {
   const sticky = document.getElementById('top-sticky');
 
   const year = document.getElementById('year');
-
   year.innerHTML = new Date().getFullYear();
 
   getEntryData();
@@ -231,23 +230,38 @@ function init() {
     createCards();
   }
 
+  function expandContents(id) {
+    let subheader = document.getElementById(`${id}-subheader`);
+    let arrowIcon = document.getElementById(`${id}-arrow-icon`);
+    arrowIcon.style.transform = 'translateY(0px) rotate(180deg)';
+    arrowIcon.classList.remove('nudge-down');
+    subheader.innerHTML = 'Hide Details';
+    setTimeout(() => {
+      arrowIcon.classList.add('nudge-up');
+    }, 1100);
+  }
+
+  function collapseContents(id) {
+    let subheader = document.getElementById(`${id}-subheader`);
+    let arrowIcon = document.getElementById(`${id}-arrow-icon`);
+    arrowIcon.style.transform = 'translateY(0px) rotate(0deg)';
+    arrowIcon.classList.remove('nudge-up');
+    subheader.innerHTML = 'View Details';
+    setTimeout(() => {
+      arrowIcon.classList.add('nudge-down');
+    }, 1100);
+  }
+
   function toggleDisplay(shouldExpand) {
     let secondaryObjects = document.getElementsByClassName('content-secondary');
     [...secondaryObjects].forEach(secondary => {
       let id = secondary.id.slice(0, secondary.id.indexOf('-'));
       let arrowIcon = document.getElementById(`${id}-arrow-icon`);
-      if (shouldExpand && arrowIcon.classList.contains('nudge-down')) {
-        arrowIcon.style.transform = 'translateY(0px) rotate(180deg)';
-        arrowIcon.classList.remove('nudge-down');
-        setTimeout(() => {
-          arrowIcon.classList.add('nudge-up');
-        }, 1100);
-      } else if (!shouldExpand && arrowIcon.classList.contains('nudge-up')) {
-        arrowIcon.style.transform = 'translateY(0px) rotate(0deg)';
-        arrowIcon.classList.remove('nudge-up');
-        setTimeout(() => {
-          arrowIcon.classList.add('nudge-down');
-        }, 1100);
+      let subheader = document.getElementById(`${id}-subheader`);
+      if (shouldExpand && subheader.innerHTML === "View Details") {
+        expandContents(id);
+      } else if (!shouldExpand && subheader.innerHTML === "Hide Details") {
+        collapseContents(id);
       }
       arrowIcon.style.transition = `transform 1s`;
       secondary.style.transition = `max-height 1s`;
@@ -295,20 +309,10 @@ function init() {
       let id = e.target.id.slice(0, e.target.id.indexOf('-'));
       let arrowIcon = document.getElementById(`${id}-arrow-icon`);
       let subheader = document.getElementById(`${id}-subheader`);
-      if (arrowIcon.style.transform === 'translateY(0px) rotate(180deg)') {
-        arrowIcon.style.transform = 'translateY(0px) rotate(0deg)';
-        arrowIcon.classList.remove('nudge-up');
-        setTimeout(() => {
-          subheader.innerHTML = 'View Details';
-          arrowIcon.classList.add('nudge-down');
-        }, 500);
+      if (subheader.innerHTML === "View Details") {
+        expandContents(id);
       } else {
-        arrowIcon.style.transform = 'translateY(0px) rotate(180deg)';
-        arrowIcon.classList.remove('nudge-down');
-        setTimeout(() => {
-          subheader.innerHTML = 'Hide Details';
-          arrowIcon.classList.add('nudge-up');
-        }, 500);
+        collapseContents(id);
       }
       let secondary = document.getElementById(`${id}-secondary`);
       let maxHeight = 0;
@@ -316,7 +320,7 @@ function init() {
         let desc = document.getElementById(`${id}-desc`);
         maxHeight = Math.round(desc.innerHTML.length / 3);
       } else {
-        maxHeight = 1000; // for student resources page
+        maxHeight = 1000;
       }
       let transition =
         maxHeight / 300 > 1 ? 1 : Math.round((maxHeight / 300) * 10) / 10;
@@ -338,11 +342,9 @@ function init() {
       let id = e.target.id.slice(0, e.target.id.indexOf('-'));
       let arrowIcon = document.getElementById(`${id}-arrow-icon`);
       if (arrowIcon.style.transform === 'translateY(0px) rotate(180deg)') {
-        arrowIcon.classList.remove('nudge-down');
-        arrowIcon.classList.add('nudge-up');
+        expandContents(id);
       } else {
-        arrowIcon.classList.remove('nudge-up');
-        arrowIcon.classList.add('nudge-down');
+        collapseContents(id);
       }
     }
   });
