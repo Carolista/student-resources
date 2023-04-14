@@ -7,6 +7,8 @@ function init() {
   // TODO: Add a suggestion box
   // TODO: Display a list of recently visited links, e.g. Document for How to Make the Most of Slack, or Starter Code for Next-Level Loops - maybe?
 
+  // TODO: Decide how to sort results before displaying on page and implement
+
   // FIXME: Images aren't loading fast enough on GitHub deployment - resize even smaller
 
 
@@ -17,11 +19,6 @@ function init() {
 
   let allEntries = [];
   let currentEntries = [];
-
-  let currentCategory = '';
-  let currentTopic = '';
-  let currentTech = '';
-  let currentDifficulty = '';
 
   let cards = [];
 
@@ -194,28 +191,20 @@ function init() {
     });
   }
 
-  function setCurrentFilterValues() {
-    currentCategory = categorySelect.value;
-    currentTopic = topicSelect.value;
-    currentTech = techSelect.value;
-    currentDifficulty = difficultySelect.value;
-  }
-
   function getFilteredEntries() {
     return allEntries.filter(entry => {
       return (
-        (entry.category === currentCategory ||
-          currentCategory === categoryOptions[0]) &&
-        (entry.topic === currentTopic || currentTopic === topicOptions[0]) &&
-        (entry.tech.includes(currentTech) || currentTech === techOptions[0]) &&
-        (entry.difficulty === currentDifficulty ||
-          currentDifficulty === difficultyOptions[0])
+        (entry.category === categorySelect.value ||
+          categorySelect.value === categoryOptions[0]) &&
+        (entry.topic === topicSelect.value || topicSelect.value === topicOptions[0]) &&
+        (entry.tech.includes(techSelect.value) || techSelect.value === techOptions[0]) &&
+        (entry.difficulty === difficultySelect.value ||
+          difficultySelect.value === difficultyOptions[0])
       );
     });
   }
 
   function updateResults(isReset = false) {
-    setCurrentFilterValues();
     currentEntries = isReset ? allEntries : getFilteredEntries();
     let num = currentEntries.length;
     resultsCount.innerHTML = isReset
