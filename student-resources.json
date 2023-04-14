@@ -1,0 +1,357 @@
+[
+  {
+    "id": 0,
+    "title": "Get the Most Out of Slack",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "Learn more, get support from your mentors and peers, and level up faster. (Bonus: How to post formatted code!)",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "https://docs.google.com/document/d/1vAPrAvyzg_5iBGQ1ESDwRzJ5oNJezOg7F_bEYGBOkAM" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-04-03",
+    "difficulty": "",
+    "image": "slack.png",
+    "isPending": false
+  },
+  {
+    "id": 1,
+    "title": "Can I Get Some Input?",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Data & Variables",
+    "description": "Import readline-sync & get user input.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/GettingInput-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/GettingInput" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-03-11",
+    "difficulty": "Easy",
+    "image": "data-variables-input.png",
+    "isPending": false
+  },
+  {
+    "id": 2,
+    "title": "Template Literals",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "The most natural way to integrate strings and variables, using back ticks and a special placeholder syntax.",
+    "links": [
+      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/Literally" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-09",
+    "difficulty": "Easy",
+    "image": "strings-arrays-template-literals.png",
+    "isPending": false
+  },
+  {
+    "id": 3,
+    "title": "Form Basics: Weekly Planner",
+    "category": "Examples & Exercises by Topic",
+    "topic": "The DOM",
+    "description": "Form validation and adding HTML to a page in the DOM",
+    "links": [
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Form-Basics" },
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-Form-Basics/" }
+    ],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "requirements": ["GitHub Account", "Local IDE", "Git"],
+    "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
+    "releaseDate": "2020-10-24",
+    "difficulty": "Moderate",
+    "image": "this-week.png",
+    "isPending": false
+  },
+  {
+    "id": 4,
+    "title": "Fetching JSON: Quotes, Advice, & Dad Jokes",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Fetch & JSON",
+    "description": "Examples of connecting to public APIs with different requirements",
+    "links": [
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Fetch-JSON-Basics" },
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-Fetch-JSON-Basics/" }
+    ],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
+    "releaseDate": "2020-10-25",
+    "difficulty": "Challenging",
+    "image": "fetching-json.png",
+    "isPending": false
+  },
+  {
+    "id": 5,
+    "title": "Physician Directory",
+    "category": "Graded Assignment Prep",
+    "topic": "Assignment 2: Scrabble Scorer",
+    "description": "Learn how to put together a program with multiple functions for the console and prepare for Graded Assignment 2: Scrabble Scorer",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "https://tinyurl.com/xt5ux8h6" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/PhysicianDirectory-StarterCode#index.js" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/PhysicianDirectory#index.js" },
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/PhysicianDirectory?v=1" },
+      { "linkType": "Video", "name": "Watch Video", "link": "https://youtu.be/tbLMj7h9Ghk" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-04-10",
+    "difficulty": "Moderate",
+    "image": "physician-directory.png",
+    "isPending": false
+  },
+  {
+    "id": 6,
+    "title": "Kaleidoscope",
+    "category": "Personal Projects",
+    "topic": "The DOM",
+    "description": "Relax and create colorful, mirrored designs",
+    "links": [
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-DOM-Kaleidoscope" },
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-DOM-Kaleidoscope/" }
+    ],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
+    "releaseDate": "2020-10-18",
+    "difficulty": "Challenging",
+    "image": "kaleidoscope.png",
+    "isPending": false
+  },
+  {
+    "id": 7,
+    "title": "Tips, Tricks, & Common Conventions",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "Semicolons, commenting, indenting, helpful IDE settings, and keyboard shortcuts",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "https://docs.google.com/document/d/1kM9A4ftCPMMWhtk3MRFACWACxmcjGaR5CERbWOCQq-0" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-03-30",
+    "difficulty": "",
+    "image": "tips-tricks.png",
+    "isPending": false
+  },
+  {
+    "id": 8,
+    "title": "How To Google All the Things",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "Resourcefulness is a learned skill - finesse your searches to drill down to the results you actually need.",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "https://docs.google.com/document/d/1_YRL4_Dq7WgTSleL-5FaJ4hK9kIdSpSYt8xqm_xXmqI" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-03-10",
+    "difficulty": "",
+    "image": "how-to-google.png",
+    "isPending": false
+  },
+  {
+    "id": 9,
+    "title": "How to Create a Program with Multiple Functions",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "Learn how to break down the requirements and methodically code one part at a time until it all works together.",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "https://tinyurl.com/xt5ux8h6" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-04-17",
+    "difficulty": "",
+    "image": "how-to-create-program.png",
+    "isPending": false
+  },
+  {
+    "id": 10,
+    "title": "Using console.log To Find Errors",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "A few well-placed comments can help you narrow down your search for errors!",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-03-11",
+    "difficulty": "",
+    "image": "debugging.png",
+    "isPending": false
+  },
+  {
+    "id": 11,
+    "title": "Improving Your Home Learning Environment",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "Learn how small changes can make a huge difference in your concentration and productivity while learning from home.",
+    "links": [
+      { "linkType": "Presentation", "name": "View Slides", "link": "https://drive.google.com/file/d/1vO0aMzKQDSN1dGN7YPEvG-ag8QvL2vcM" },
+      { "linkType": "Video", "name": "Watch Video", "link": "https://youtu.be/5Kb3eBG-4Nc" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2020-11-30",
+    "difficulty": "",
+    "image": "home-learning-environment.png",
+    "isPending": false
+  },
+  {
+    "id": 12,
+    "title": "MySpace Fun Facts",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Data & Variables",
+    "description": "Practice saving values with different data types and formatting output.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/MySpaceFunFacts-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/MySpaceFunFacts" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-14",
+    "difficulty": "Easy",
+    "image": "myspace-fun-facts.png",
+    "isPending": false
+  },
+  {
+    "id": 13,
+    "title": "Mad Libs",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Data & Variables",
+    "description": "Have a little fun telling a wacky story while practicing with variables and formatting in the console.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/MadLibs" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-08",
+    "difficulty": "Easy",
+    "image": "mad-libs.png",
+    "isPending": false
+  },
+  {
+    "id": 14,
+    "title": "Cookies 'N' Cream",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Conditionals",
+    "description": "How to use booleans and conditional statements with if/else blocks to handle logic",
+    "links": [
+      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-08",
+    "difficulty": "Easy",
+    "image": "cookies-cream.png",
+    "isPending": false
+  },
+  {
+    "id": 15,
+    "title": "Terms & Conditions",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Conditionals",
+    "description": "Practice writing conditional statements with if/else blocks and incorporating the && and || operators.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/TermsAndConditions" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-14",
+    "difficulty": "Easy",
+    "image": "terms-conditions.png",
+    "isPending": false
+  },
+  {
+    "id": 16,
+    "title": "String Basics",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "Bracket notation, combining & building strings, escape characters, etc.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/StringBasics-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/StringBasics" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-11",
+    "difficulty": "Easy",
+    "image": "string-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 17,
+    "title": "String Methods",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "Practice using the most common string methods for basic operations and with conditionals.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/StringMethods-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/StringMethods" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-26",
+    "difficulty": "Easy",
+    "image": "string-methods.png",
+    "isPending": false
+  },
+  {
+    "id": 18,
+    "title": "Practice with Arrays",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "Practice using the most common array methods.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/PracticeWithArrays-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/PracticeWithArrays" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-13",
+    "difficulty": "Easy",
+    "image": "practice-with-arrays.png",
+    "isPending": false
+  },
+  {
+    "id": 19,
+    "title": "Strings vs Arrays",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "A few examples illustrating the differences and similarities when working with strings and arrays.",
+    "links": [
+      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/StringsVSArrays" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-04-21",
+    "difficulty": "Easy",
+    "image": "strings-vs-arrays.png",
+    "isPending": false
+  }
+]

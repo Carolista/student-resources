@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Student Resources - </title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/679a59d672.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+    <body>
+
+      <div id="backdrop-container">
+        <div id="backdrop-right"></div>
+        <div id="backdrop-center"></div>
+        <div id="backdrop-left"></div>
+      </div>
+
+      <div id="page-container">
+        <div id="page-content">
+          <div id="top"></div>
+          <a href="#top" id="top-sticky">
+            <i class="hand-pointing fas fa-hand-point-up"></i>
+            Return to top
+          </a>
+
+          <header>
+            <div id="name-box">
+              <span class="text-light"><span class="text-heavy">Code</span>&nbsp;with&nbsp;</span><span class="text-heavy">Carrie</span>
+            </div>
+            <div id="page-title">Student Resources</div>
+            <div id="form-box" class="content-item">
+              <div class="content-block">
+                <div class="content-primary">
+                  <div>
+                    <p><span class="resource-subheader">Welcome, students!</span> As you work your way through LaunchCode's WebDev course, use these resources, practice exercises, and example projects to deepen your understanding of course concepts, build your skills, and prepare for graded assignments. You can filter by category, topic, tech, and difficulty to refine the results below.</p>
+                    <form id="resource-form">
+                      <div class="input-group">                  
+                        <select id="category-select" class="resource-select"></select>
+                        <select id="topic-select" class="resource-select"></select>
+                        <select id="tech-select" class="resource-select"></select>
+                        <select id="difficulty-select" class="resource-select"></select>
+                        <button id="reset-button" class="resource-button reset-button">Reset Filters</button>
+                      </div>
+                      <div class="results-button-row">
+                        <p id="results-count" class="results-count"></p>
+                        <div class="button-group">
+                          <button id="expand-button" class="resource-button muted-button"">Expand All</button>
+                          <button id="collapse-button" class="resource-button muted-button">Collapse All</button>
+                        </div>         
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <main>
+            <div id="results-area"><!-- content from student-resources.js --></div>             
+          </main>
+
+          <footer><!-- content from global.js --></footer> 
+        </div>
+    </div>
+    
+  </body>
+</html>
