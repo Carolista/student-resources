@@ -1,20 +1,14 @@
 window.addEventListener('load', () => init());
 
 function init() {
-  // TODO: perhaps organize results under section headers and categories like they are on Google docs - only present if relevant
-  // maybe a sorting algorithm
 
-  // TODO: Add ability to sort by newest added? (Might not work well with masonry layout)
-
+  // TODO: Add ability to filter by new exercises only
+  // TODO: Add search feature - handle spaces and partial matches
+  // TODO: Add a suggestion box
   // TODO: Display a list of recently visited links, e.g. Document for How to Make the Most of Slack, or Starter Code for Next-Level Loops - maybe?
-
-  // TODO: Consider multi-select for category and tech
 
   // FIXME: Images aren't loading fast enough on GitHub deployment - resize even smaller
 
-  // FIXME: keyword field for form search is not working - also needs to handle spaces and partial matches
-
-  // TODO: Add a suggestion box
 
   let categoryOptions = ['--Select Category--'];
   let topicOptions = ['--Select Topic--'];
