@@ -1,0 +1,34 @@
+@keyframes nudge-down {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  35% {
+    transform: translateY(2px) rotate(0deg);
+  }
+  60% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(2px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+@keyframes nudge-up {
+  0% {
+    transform: translateY(0px) rotate(180deg);
+  }
+  35% {
+    transform: translateY(-2px) rotate(180deg);
+  }
+  60% {
+    transform: translateY(0px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(-2px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(180deg);
+  }
+}

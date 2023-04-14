@@ -1,0 +1,44 @@
+#backdrop-container {
+  position: fixed;
+  display: block;
+  background-color: $dark-shadow-color;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+#backdrop-left {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: $muted-color;
+  width: 320px;
+  height: 100vh;
+  z-index: 3;
+  transform: skewX(-12deg) translate(-200px, 0);
+}
+
+#backdrop-center {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: $muted-shadow-color;
+  width: 240px;
+  height: 100vh;
+  z-index: 2;
+  transform: skewX(-20deg);
+}
+
+#backdrop-right {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: $light-muted-color;
+  width: 360px;
+  height: 100vh;
+  z-index: 1;
+  transform: skewX(-10deg);
+}
