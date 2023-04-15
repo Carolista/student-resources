@@ -1,6 +1,42 @@
 [
   {
-    "id": 0,
+    "id": 101,
+    "title": "How to Succeed at LaunchCode",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "",
+    "updateDate": "",
+    "difficulty": "",
+    "image": "",
+    "isPending": true
+  },
+  {
+    "id": 102,
+    "title": "Digital Literacy",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "",
+    "updateDate": "",
+    "difficulty": "",
+    "image": "",
+    "isPending": true
+  },
+  {
+    "id": 103,
     "title": "Get the Most Out of Slack",
     "category": "Make A Strong Start",
     "topic": "Resources",
@@ -18,7 +54,172 @@
     "isPending": false
   },
   {
-    "id": 1,
+    "id": 104,
+    "title": "Tips, Tricks, & Common Conventions",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "Semicolons, commenting, indenting, helpful IDE settings, and keyboard shortcuts",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "https://docs.google.com/document/d/1kM9A4ftCPMMWhtk3MRFACWACxmcjGaR5CERbWOCQq-0" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-03-30",
+    "updateDate": "",
+    "difficulty": "",
+    "image": "tips-tricks.png",
+    "isPending": false
+  },
+  {
+    "id": 105,
+    "title": "How To Google All the Things",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "Resourcefulness is a learned skill - finesse your searches to drill down to the results you actually need.",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "https://docs.google.com/document/d/1_YRL4_Dq7WgTSleL-5FaJ4hK9kIdSpSYt8xqm_xXmqI" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-03-10",
+    "updateDate": "",
+    "difficulty": "",
+    "image": "how-to-google.png",
+    "isPending": false
+  },
+  {
+    "id": 106,
+    "title": "How to Create a Program with Multiple Functions",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "Learn how to break down the requirements and methodically code one part at a time until it all works together.",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "https://tinyurl.com/xt5ux8h6" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-04-17",
+    "updateDate": "",
+    "difficulty": "",
+    "image": "how-to-create-program.png",
+    "isPending": false
+  },
+  {
+    "id": 107,
+    "title": "Using console.log To Find Errors",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "A few well-placed comments can help you narrow down your search for errors!",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-03-11",
+    "updateDate": "",
+    "difficulty": "",
+    "image": "debugging.png",
+    "isPending": false
+  },
+  {
+    "id": 108,
+    "title": "Naming Conventions",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "",
+    "updateDate": "",
+    "difficulty": "",
+    "image": "",
+    "isPending": true
+  },
+  {
+    "id": 109,
+    "title": "A Mindset for Success",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "",
+    "links": [
+      { "linkType": "Document", "name": "Google Doc", "link": "" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "",
+    "updateDate": "",
+    "difficulty": "",
+    "image": "",
+    "isPending": true
+  },
+  {
+    "id": 110,
+    "title": "Improving Your Home Learning Environment",
+    "category": "Make A Strong Start",
+    "topic": "Resources",
+    "description": "Learn how small changes can make a huge difference in your concentration and productivity while learning from home.",
+    "links": [
+      { "linkType": "Presentation", "name": "View Slides", "link": "https://drive.google.com/file/d/1vO0aMzKQDSN1dGN7YPEvG-ag8QvL2vcM" },
+      { "linkType": "Video", "name": "Watch Video", "link": "https://youtu.be/5Kb3eBG-4Nc" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2020-11-30",
+    "updateDate": "",
+    "difficulty": "",
+    "image": "home-learning-environment.png",
+    "isPending": false
+  },
+  {
+    "id": 201,
+    "title": "MySpace Fun Facts",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Data & Variables",
+    "description": "Practice saving values with different data types and formatting output.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/MySpaceFunFacts-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/MySpaceFunFacts" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-14",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "myspace-fun-facts.png",
+    "isPending": false
+  },
+  {
+    "id": 202,
+    "title": "Mad Libs",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Data & Variables",
+    "description": "Have a little fun telling a wacky story while practicing with variables and formatting in the console.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/MadLibs" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-08",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "mad-libs.png",
+    "isPending": false
+  },
+  {
+    "id": 203,
     "title": "Can I Get Some Input?",
     "category": "Examples & Exercises by Topic",
     "topic": "Data & Variables",
@@ -37,7 +238,101 @@
     "isPending": false
   },
   {
-    "id": 2,
+    "id": 204,
+    "title": "Data Type Conversions",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Data & Variables",
+    "description": "Learn how to convert between different data types.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/DataTypeConversions-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/DataTypeConversions" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2022-09-15",
+    "updateDate": "2023-04-14",
+    "difficulty": "Easy",
+    "image": "data-type-conversions.png",
+    "isPending": false
+  },
+  {
+    "id": 211,
+    "title": "Cookies 'N' Cream",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Conditionals",
+    "description": "How to use booleans and conditional statements with if/else blocks to handle logic",
+    "links": [
+      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-08",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "cookies-cream.png",
+    "isPending": false
+  },
+  {
+    "id": 212,
+    "title": "Terms & Conditions",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Conditionals",
+    "description": "Practice writing conditional statements with if/else blocks and incorporating the && and || operators.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/TermsAndConditions" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-14",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "terms-conditions.png",
+    "isPending": false
+  },
+  {
+    "id": 221,
+    "title": "String Basics",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "Bracket notation, combining & building strings, escape characters, etc.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/StringBasics-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/StringBasics" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-11",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "string-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 222,
+    "title": "String Methods",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "Practice using the most common string methods for basic operations and with conditionals.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/StringMethods-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/StringMethods" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-26",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "string-methods.png",
+    "isPending": false
+  },
+  {
+    "id": 223,
     "title": "Template Literals",
     "category": "Examples & Exercises by Topic",
     "topic": "Strings & Arrays",
@@ -53,6 +348,61 @@
     "updateDate": "2023-04-14",
     "difficulty": "Easy",
     "image": "template-literals.png",
+    "isPending": false
+  },
+  {
+    "id": 224,
+    "title": "Practice with Arrays",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "Practice using the most common array methods.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/PracticeWithArrays-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/PracticeWithArrays" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-13",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "practice-with-arrays.png",
+    "isPending": false
+  },
+  {
+    "id": 225,
+    "title": "Strings vs Arrays",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "A few examples illustrating the differences and similarities when working with strings and arrays.",
+    "links": [
+      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/StringsVSArrays" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-04-21",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "strings-vs-arrays.png",
+    "isPending": false
+  },
+  {
+    "id": 226,
+    "title": "Method Chaining",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "Examples of method chaining when working with strings and arrays.",
+    "links": [
+      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/MethodChainingExplained" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-04-21",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "method-chaining.png",
     "isPending": false
   },
   {
@@ -132,266 +482,6 @@
     "updateDate": "",
     "difficulty": "Challenging",
     "image": "kaleidoscope.png",
-    "isPending": false
-  },
-  {
-    "id": 7,
-    "title": "Tips, Tricks, & Common Conventions",
-    "category": "Make A Strong Start",
-    "topic": "Resources",
-    "description": "Semicolons, commenting, indenting, helpful IDE settings, and keyboard shortcuts",
-    "links": [
-      { "linkType": "Document", "name": "Google Doc", "link": "https://docs.google.com/document/d/1kM9A4ftCPMMWhtk3MRFACWACxmcjGaR5CERbWOCQq-0" }
-    ],
-    "tech": [],
-    "requirements": [],
-    "note": "",
-    "releaseDate": "2021-03-30",
-    "updateDate": "",
-    "difficulty": "",
-    "image": "tips-tricks.png",
-    "isPending": false
-  },
-  {
-    "id": 8,
-    "title": "How To Google All the Things",
-    "category": "Make A Strong Start",
-    "topic": "Resources",
-    "description": "Resourcefulness is a learned skill - finesse your searches to drill down to the results you actually need.",
-    "links": [
-      { "linkType": "Document", "name": "Google Doc", "link": "https://docs.google.com/document/d/1_YRL4_Dq7WgTSleL-5FaJ4hK9kIdSpSYt8xqm_xXmqI" }
-    ],
-    "tech": [],
-    "requirements": [],
-    "note": "",
-    "releaseDate": "2021-03-10",
-    "updateDate": "",
-    "difficulty": "",
-    "image": "how-to-google.png",
-    "isPending": false
-  },
-  {
-    "id": 9,
-    "title": "How to Create a Program with Multiple Functions",
-    "category": "Make A Strong Start",
-    "topic": "Resources",
-    "description": "Learn how to break down the requirements and methodically code one part at a time until it all works together.",
-    "links": [
-      { "linkType": "Document", "name": "Google Doc", "link": "https://tinyurl.com/xt5ux8h6" }
-    ],
-    "tech": [],
-    "requirements": [],
-    "note": "",
-    "releaseDate": "2021-04-17",
-    "updateDate": "",
-    "difficulty": "",
-    "image": "how-to-create-program.png",
-    "isPending": false
-  },
-  {
-    "id": 10,
-    "title": "Using console.log To Find Errors",
-    "category": "Make A Strong Start",
-    "topic": "Resources",
-    "description": "A few well-placed comments can help you narrow down your search for errors!",
-    "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole" }
-    ],
-    "tech": [],
-    "requirements": [],
-    "note": "",
-    "releaseDate": "2021-03-11",
-    "updateDate": "",
-    "difficulty": "",
-    "image": "debugging.png",
-    "isPending": false
-  },
-  {
-    "id": 11,
-    "title": "Improving Your Home Learning Environment",
-    "category": "Make A Strong Start",
-    "topic": "Resources",
-    "description": "Learn how small changes can make a huge difference in your concentration and productivity while learning from home.",
-    "links": [
-      { "linkType": "Presentation", "name": "View Slides", "link": "https://drive.google.com/file/d/1vO0aMzKQDSN1dGN7YPEvG-ag8QvL2vcM" },
-      { "linkType": "Video", "name": "Watch Video", "link": "https://youtu.be/5Kb3eBG-4Nc" }
-    ],
-    "tech": [],
-    "requirements": [],
-    "note": "",
-    "releaseDate": "2020-11-30",
-    "updateDate": "",
-    "difficulty": "",
-    "image": "home-learning-environment.png",
-    "isPending": false
-  },
-  {
-    "id": 12,
-    "title": "MySpace Fun Facts",
-    "category": "Examples & Exercises by Topic",
-    "topic": "Data & Variables",
-    "description": "Practice saving values with different data types and formatting output.",
-    "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/MySpaceFunFacts-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/MySpaceFunFacts" }
-    ],
-    "tech": ["JavaScript"],
-    "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2020-10-14",
-    "updateDate": "",
-    "difficulty": "Easy",
-    "image": "myspace-fun-facts.png",
-    "isPending": false
-  },
-  {
-    "id": 13,
-    "title": "Mad Libs",
-    "category": "Examples & Exercises by Topic",
-    "topic": "Data & Variables",
-    "description": "Have a little fun telling a wacky story while practicing with variables and formatting in the console.",
-    "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/MadLibs" }
-    ],
-    "tech": ["JavaScript"],
-    "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2020-10-08",
-    "updateDate": "",
-    "difficulty": "Easy",
-    "image": "mad-libs.png",
-    "isPending": false
-  },
-  {
-    "id": 14,
-    "title": "Cookies 'N' Cream",
-    "category": "Examples & Exercises by Topic",
-    "topic": "Conditionals",
-    "description": "How to use booleans and conditional statements with if/else blocks to handle logic",
-    "links": [
-      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" }
-    ],
-    "tech": ["JavaScript"],
-    "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2020-10-08",
-    "updateDate": "",
-    "difficulty": "Easy",
-    "image": "cookies-cream.png",
-    "isPending": false
-  },
-  {
-    "id": 15,
-    "title": "Terms & Conditions",
-    "category": "Examples & Exercises by Topic",
-    "topic": "Conditionals",
-    "description": "Practice writing conditional statements with if/else blocks and incorporating the && and || operators.",
-    "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/TermsAndConditions" }
-    ],
-    "tech": ["JavaScript"],
-    "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2020-10-14",
-    "updateDate": "",
-    "difficulty": "Easy",
-    "image": "terms-conditions.png",
-    "isPending": false
-  },
-  {
-    "id": 16,
-    "title": "String Basics",
-    "category": "Examples & Exercises by Topic",
-    "topic": "Strings & Arrays",
-    "description": "Bracket notation, combining & building strings, escape characters, etc.",
-    "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/StringBasics-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/StringBasics" }
-    ],
-    "tech": ["JavaScript"],
-    "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2020-10-11",
-    "updateDate": "",
-    "difficulty": "Easy",
-    "image": "string-basics.png",
-    "isPending": false
-  },
-  {
-    "id": 17,
-    "title": "String Methods",
-    "category": "Examples & Exercises by Topic",
-    "topic": "Strings & Arrays",
-    "description": "Practice using the most common string methods for basic operations and with conditionals.",
-    "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/StringMethods-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/StringMethods" }
-    ],
-    "tech": ["JavaScript"],
-    "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2020-10-26",
-    "updateDate": "",
-    "difficulty": "Easy",
-    "image": "string-methods.png",
-    "isPending": false
-  },
-  {
-    "id": 18,
-    "title": "Practice with Arrays",
-    "category": "Examples & Exercises by Topic",
-    "topic": "Strings & Arrays",
-    "description": "Practice using the most common array methods.",
-    "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/PracticeWithArrays-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/PracticeWithArrays" }
-    ],
-    "tech": ["JavaScript"],
-    "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2020-10-13",
-    "updateDate": "",
-    "difficulty": "Easy",
-    "image": "practice-with-arrays.png",
-    "isPending": false
-  },
-  {
-    "id": 19,
-    "title": "Strings vs Arrays",
-    "category": "Examples & Exercises by Topic",
-    "topic": "Strings & Arrays",
-    "description": "A few examples illustrating the differences and similarities when working with strings and arrays.",
-    "links": [
-      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/StringsVSArrays" }
-    ],
-    "tech": ["JavaScript"],
-    "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2021-04-21",
-    "updateDate": "",
-    "difficulty": "Easy",
-    "image": "strings-vs-arrays.png",
-    "isPending": false
-  },
-  {
-    "id": 20,
-    "title": "Data Type Conversions",
-    "category": "Examples & Exercises by Topic",
-    "topic": "Data & Variables",
-    "description": "Learn how to convert between different data types.",
-    "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/DataTypeConversions-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/DataTypeConversions" }
-    ],
-    "tech": ["JavaScript"],
-    "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2022-09-15",
-    "updateDate": "2023-04-14",
-    "difficulty": "Easy",
-    "image": "data-type-conversions.png",
     "isPending": false
   }
 ]

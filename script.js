@@ -40,44 +40,45 @@ function init() {
     const resp = await fetch('data/student-resources.json');
     const data = await resp.json();
     data.forEach(obj => {
-      let newEntry = {
-        id: obj.id,
-        title: obj.title,
-        category: obj.category,
-        topic: obj.topic,
-        description: obj.description,
-        links: obj.links.map(link => ({
-          linkType: link.linkType,
-          name: link.name,
-          link: link.link,
-        })),
-        tech: obj.tech,
-        requirements: obj.requirements,
-        note: obj.note,
-        releaseDate: obj.releaseDate,
-        updateDate: obj.updateDate,
-        difficulty: obj.difficulty,
-        image: obj.image,
-        isPending: obj.isPending,
-      };
-      allEntries.push(newEntry);
-      if (!categoryOptions.includes(obj.category)) {
-        categoryOptions.push(obj.category);
-      }
-      if (!topicOptions.includes(obj.topic)) {
-        topicOptions.push(obj.topic);
-      }
-      for (let j = 0; j < obj.tech.length; j++) {
-        if (!techOptions.includes(obj.tech[j])) {
-          techOptions.push(obj.tech[j]);
+      if (!obj.isPending) {
+        let newEntry = {
+          id: obj.id,
+          title: obj.title,
+          category: obj.category,
+          topic: obj.topic,
+          description: obj.description,
+          links: obj.links.map(link => ({
+            linkType: link.linkType,
+            name: link.name,
+            link: link.link,
+          })),
+          tech: obj.tech,
+          requirements: obj.requirements,
+          note: obj.note,
+          releaseDate: obj.releaseDate,
+          updateDate: obj.updateDate,
+          difficulty: obj.difficulty,
+          image: obj.image,
+          isPending: obj.isPending,
+        };
+        allEntries.push(newEntry);
+        if (!categoryOptions.includes(obj.category)) {
+          categoryOptions.push(obj.category);
         }
-      }
-      if (
-        !difficultyOptions.includes(obj.difficulty) &&
-        obj.difficulty !== ''
-      ) {
-        difficultyOptions.push(obj.difficulty);
-      }
+        if (!topicOptions.includes(obj.topic)) {
+          topicOptions.push(obj.topic);
+        }
+        obj.tech.forEach(tech => {
+          if (!techOptions.includes(tech)) {
+            techOptions.push(tech);
+          }
+        });
+        if (
+          obj.difficulty && !difficultyOptions.includes(obj.difficulty)
+        ) {
+          difficultyOptions.push(obj.difficulty);
+        }
+      } 
     });
     populateSelects();
     updateResults(true);
