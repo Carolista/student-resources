@@ -32,7 +32,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-color: $dark-shadow-color;
+  background-color: $contrast-color;
   color: $primary-color;
   font-family: $primary-font;
   font-size: 1rem;
@@ -59,13 +59,16 @@ footer {
   bottom: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  color: $light-color;
-  height: 50px;
+  background-color: $contrast-color;
+  color: $primary-color;
+  font-weight: 500;
+  line-height: 16px;
   width: 100vw;
-  padding: 0px 40px;
   margin-top: auto;
+  padding: 20px 5%;
   z-index: 5;
 }
 
@@ -89,6 +92,10 @@ a {
 
 button {
   width: 100px;
+}
+
+select, button {
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -102,6 +109,17 @@ select {
 
 .text-heavy {
   font-weight: 600;
+}
+
+#backdrop-container {
+  position: fixed;
+  display: block;
+  background-image: url('../images/geo-bkg.jpeg');
+  opacity: 0.5;
+  filter: saturate(0.7) hue-rotate(-15deg);
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
 }
 
 #top-sticky {
@@ -139,7 +157,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $primary-color;
+  background-color: $darkest-accent-color;
   color: $contrast-color;
   font-weight: 200;
   font-family: $title-font;
@@ -190,6 +208,8 @@ select {
   vertical-align: top;
   margin: 0px 0px 15px;
   width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
   transition: filter $shortest-transition ease-in-out;
   &:hover {
@@ -312,11 +332,11 @@ select {
 }
 
 .resource-select {
-  background-color: $contrast-color;
+  background-color: $lightest-accent-color;
   color: $darker-accent-color;
   font-family: $primary-font;
   height: 24px;
-  border: 2px solid $medium-accent-color;
+  border: none;
   outline: none;
   padding-right: 4px;
 }
@@ -354,7 +374,7 @@ select {
   &:hover {
     background-color: $medium-accent-color;
   }
-  &:focus {
+  &:active {
     background-color: $darker-accent-color;
   }
 }
@@ -363,26 +383,27 @@ select {
   background-color: $light-accent-color;
   color: $contrast-color;
   &:hover {
-    background-color: $extra-light-accent-color;
+    background-color: $lighter-accent-color;
   }
-  &:focus {
+  &:active {
     background-color: $medium-accent-color;
   }
 }
 
 .reset-button {
-  background-color: $medium-accent-color;
+  background-color: $highlight-color;
   color: $contrast-color;
   &:hover {
-    background-color: $light-accent-color;
+    background-color: $light-highlight-color;
   }
-  &:focus {
-    background-color: $dark-accent-color;
+  &:active {
+    background-color: $dark-highlight-color;
   }
 }
 
 .new {
-  color: $medium-accent-color;
+  color: $highlight-color;
+  font-size: 1rem;
 }
 
 .resource-image-container {
@@ -432,15 +453,6 @@ select {
   }
 }
 
-@media screen and (max-width: 900px) {
-  footer {
-    flex-direction: column;
-    align-items: flex-end;
-    line-height: 16px;
-    padding-bottom: 20px;
-  }
-}
-
 @media screen and (max-width: 750px) {
   main {
     margin-bottom: 60px;
@@ -450,14 +462,6 @@ select {
   }
   #results-area {
     columns: 2;
-  }
-  footer {
-    align-items: center;
-    color: $primary-color;
-    background-color: $contrast-color;
-    font-weight: 500;
-    height: 100px;
-    padding: 20px 5%;
   }
 }
 
@@ -474,6 +478,9 @@ select {
   }
   #results-area {
     columns: 1;
+  }
+  footer {
+    flex-direction: column;
   }
 }
 

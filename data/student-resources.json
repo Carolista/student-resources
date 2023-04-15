@@ -12,6 +12,7 @@
     "requirements": [],
     "note": "",
     "releaseDate": "2021-04-03",
+    "updateDate": "",
     "difficulty": "",
     "image": "slack.png",
     "isPending": false
@@ -30,8 +31,9 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2021-03-11",
+    "updateDate": "",
     "difficulty": "Easy",
-    "image": "data-variables-input.png",
+    "image": "getting-user-input.png",
     "isPending": false
   },
   {
@@ -41,14 +43,16 @@
     "topic": "Strings & Arrays",
     "description": "The most natural way to integrate strings and variables, using back ticks and a special placeholder syntax.",
     "links": [
-      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/Literally" }
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/Literally-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/Literally" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-09",
+    "updateDate": "2023-04-14",
     "difficulty": "Easy",
-    "image": "strings-arrays-template-literals.png",
+    "image": "template-literals.png",
     "isPending": false
   },
   {
@@ -65,6 +69,7 @@
     "requirements": ["GitHub Account", "Local IDE", "Git"],
     "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
     "releaseDate": "2020-10-24",
+    "updateDate": "",
     "difficulty": "Moderate",
     "image": "this-week.png",
     "isPending": false
@@ -83,6 +88,7 @@
     "requirements": ["GitHub Account", "local IDE", "Git"],
     "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
     "releaseDate": "2020-10-25",
+    "updateDate": "",
     "difficulty": "Challenging",
     "image": "fetching-json.png",
     "isPending": false
@@ -104,6 +110,7 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-04-10",
+    "updateDate": "",
     "difficulty": "Moderate",
     "image": "physician-directory.png",
     "isPending": false
@@ -122,6 +129,7 @@
     "requirements": ["GitHub Account", "local IDE", "Git"],
     "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
     "releaseDate": "2020-10-18",
+    "updateDate": "",
     "difficulty": "Challenging",
     "image": "kaleidoscope.png",
     "isPending": false
@@ -139,6 +147,7 @@
     "requirements": [],
     "note": "",
     "releaseDate": "2021-03-30",
+    "updateDate": "",
     "difficulty": "",
     "image": "tips-tricks.png",
     "isPending": false
@@ -156,6 +165,7 @@
     "requirements": [],
     "note": "",
     "releaseDate": "2021-03-10",
+    "updateDate": "",
     "difficulty": "",
     "image": "how-to-google.png",
     "isPending": false
@@ -173,6 +183,7 @@
     "requirements": [],
     "note": "",
     "releaseDate": "2021-04-17",
+    "updateDate": "",
     "difficulty": "",
     "image": "how-to-create-program.png",
     "isPending": false
@@ -191,6 +202,7 @@
     "requirements": [],
     "note": "",
     "releaseDate": "2021-03-11",
+    "updateDate": "",
     "difficulty": "",
     "image": "debugging.png",
     "isPending": false
@@ -209,6 +221,7 @@
     "requirements": [],
     "note": "",
     "releaseDate": "2020-11-30",
+    "updateDate": "",
     "difficulty": "",
     "image": "home-learning-environment.png",
     "isPending": false
@@ -227,6 +240,7 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-14",
+    "updateDate": "",
     "difficulty": "Easy",
     "image": "myspace-fun-facts.png",
     "isPending": false
@@ -244,6 +258,7 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-08",
+    "updateDate": "",
     "difficulty": "Easy",
     "image": "mad-libs.png",
     "isPending": false
@@ -261,6 +276,7 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-08",
+    "updateDate": "",
     "difficulty": "Easy",
     "image": "cookies-cream.png",
     "isPending": false
@@ -279,6 +295,7 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-14",
+    "updateDate": "",
     "difficulty": "Easy",
     "image": "terms-conditions.png",
     "isPending": false
@@ -297,6 +314,7 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-11",
+    "updateDate": "",
     "difficulty": "Easy",
     "image": "string-basics.png",
     "isPending": false
@@ -315,6 +333,7 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-26",
+    "updateDate": "",
     "difficulty": "Easy",
     "image": "string-methods.png",
     "isPending": false
@@ -333,6 +352,7 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-13",
+    "updateDate": "",
     "difficulty": "Easy",
     "image": "practice-with-arrays.png",
     "isPending": false
@@ -350,8 +370,28 @@
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2021-04-21",
+    "updateDate": "",
     "difficulty": "Easy",
     "image": "strings-vs-arrays.png",
+    "isPending": false
+  },
+  {
+    "id": 20,
+    "title": "Data Type Conversions",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Data & Variables",
+    "description": "Learn how to convert between different data types.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/DataTypeConversions-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/DataTypeConversions" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2022-09-15",
+    "updateDate": "2023-04-14",
+    "difficulty": "Easy",
+    "image": "data-type-conversions.png",
     "isPending": false
   }
 ]

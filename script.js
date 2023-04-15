@@ -1,7 +1,7 @@
 window.addEventListener('load', () => init());
 
 function init() {
-
+  // TODO: Dynamically adjust select options based on overlap (e.g., graded assignment prep vs topical)
   // TODO: Add ability to filter by new exercises only
   // TODO: Add search feature - handle spaces and partial matches
   // TODO: Add a suggestion box
@@ -10,7 +10,6 @@ function init() {
   // TODO: Decide how to sort results before displaying on page and implement
 
   // FIXME: Images aren't loading fast enough on GitHub deployment - resize even smaller
-
 
   let categoryOptions = ['--Select Category--'];
   let topicOptions = ['--Select Topic--'];
@@ -56,6 +55,7 @@ function init() {
         requirements: obj.requirements,
         note: obj.note,
         releaseDate: obj.releaseDate,
+        updateDate: obj.updateDate,
         difficulty: obj.difficulty,
         image: obj.image,
         isPending: obj.isPending,
@@ -101,11 +101,21 @@ function init() {
   function createCards() {
     cards = [];
     currentEntries.forEach(entry => {
+      let updatedText =
+        entry.updateDate &&
+        (new Date() - new Date(entry.updateDate)) / (1000 * 60 * 60 * 24) < 90
+          ? `<span class="new"> UPDATED!</span>`
+          : '';
       let newText =
-        (new Date() - new Date(entry.releaseDate)) / (1000 * 60 * 60 * 24) < 42
+        updatedText === '' &&
+        (new Date() - new Date(entry.releaseDate)) / (1000 * 60 * 60 * 24) < 90
           ? `<span class="new"> NEW!</span>`
           : '';
-      let linkList = `
+      let note = entry.note === '' ? '' : `<p class="note">${entry.note}</p>`;
+      let linkList =
+        entry.links.length === 0
+          ? ''
+          : `
         <div>
           <p class="resource-subheader">${
             entry.links.length === 1 ? 'Link' : 'Links'
@@ -120,7 +130,10 @@ function init() {
           </div>
         </div>
       `;
-      let techList = `
+      let techList =
+        entry.tech.length === 0
+          ? ''
+          : `
         <div>
           <p class="resource-subheader">Tech</p>
           <div class="resource-list">
@@ -130,7 +143,28 @@ function init() {
           </div>
         </div>
       `;
-      let difficulty = `
+      let releaseDate =
+        entry.releaseDate === ''
+          ? ''
+          : `
+        <p class="resource-subheader">Released</p>
+        <div class="resource-list">
+        <p class="resource-list-item">${entry.releaseDate}</p>
+        </div>
+      `;
+      let updateDate =
+        entry.updateDate === ''
+          ? ''
+          : `
+        <p class="resource-subheader">Updated</p>
+        <div class="resource-list">
+        <p class="resource-list-item">${entry.updateDate}</p>
+        </div>
+      `;
+      let difficulty =
+        entry.difficulty === ''
+          ? ''
+          : `
         <div>
           <p class="resource-subheader">Difficulty</p>
           <div class="resource-list">
@@ -142,7 +176,9 @@ function init() {
         <div id="${entry.id}-card" class="card">
           <div class="content-block">
             <div class="resource-image-container">
-              <img class="resource-image" src=${'./images/' + entry.image} />
+              <img class="resource-image" src=${
+                './images/entries/' + entry.image
+              } />
             </div>
             <div class="content-primary">
               <div class="content-primary-text">
@@ -150,22 +186,21 @@ function init() {
                   <span>${entry.category}</span> &nbsp;&#124;&nbsp; 
                   <span>${entry.topic}</span>
                 </div>
-                <p class="content-header">${entry.title}${newText}</p>
+                <p class="content-header">${
+                  entry.title
+                }${newText}${updatedText}</p>
                 <p class="content-desc">${entry.description}</p>
               </div>
             </div>
             <div id="${entry.id}-animated-box" class="content-animated-box">
-            <div id="${entry.id}-secondary" class="content-secondary">
-              <div class="content-secondary-container">
-                ${entry.note === '' ? '' : `<p class="note">${entry.note}</p>`}
-                
-                ${entry.links.length > 0 ? linkList : ''}
-                ${entry.tech.length > 0 ? techList : ''}
-                <p class="resource-subheader">Release Date</p>
-                <div class="resource-list">
-                  <p class="resource-list-item">${entry.releaseDate}</p>
-                </div>
-                ${entry.difficulty === '' ? '' : difficulty}
+              <div id="${entry.id}-secondary" class="content-secondary">
+                <div class="content-secondary-container">
+                  ${note}
+                  ${linkList}
+                  ${techList}
+                  ${releaseDate}
+                  ${updateDate}
+                  ${difficulty}
                 </div>
               </div>
             </div>
@@ -196,8 +231,10 @@ function init() {
       return (
         (entry.category === categorySelect.value ||
           categorySelect.value === categoryOptions[0]) &&
-        (entry.topic === topicSelect.value || topicSelect.value === topicOptions[0]) &&
-        (entry.tech.includes(techSelect.value) || techSelect.value === techOptions[0]) &&
+        (entry.topic === topicSelect.value ||
+          topicSelect.value === topicOptions[0]) &&
+        (entry.tech.includes(techSelect.value) ||
+          techSelect.value === techOptions[0]) &&
         (entry.difficulty === difficultySelect.value ||
           difficultySelect.value === difficultyOptions[0])
       );
@@ -241,9 +278,9 @@ function init() {
       let id = secondary.id.slice(0, secondary.id.indexOf('-'));
       let arrowIcon = document.getElementById(`${id}-arrow-icon`);
       let subheader = document.getElementById(`${id}-subheader`);
-      if (shouldExpand && subheader.innerHTML === "View Details") {
+      if (shouldExpand && subheader.innerHTML === 'View Details') {
         expandContents(id);
-      } else if (!shouldExpand && subheader.innerHTML === "Hide Details") {
+      } else if (!shouldExpand && subheader.innerHTML === 'Hide Details') {
         collapseContents(id);
       }
       arrowIcon.style.transition = `transform 1s`;
@@ -292,7 +329,7 @@ function init() {
       let id = e.target.id.slice(0, e.target.id.indexOf('-'));
       let arrowIcon = document.getElementById(`${id}-arrow-icon`);
       let subheader = document.getElementById(`${id}-subheader`);
-      if (subheader.innerHTML === "View Details") {
+      if (subheader.innerHTML === 'View Details') {
         expandContents(id);
       } else {
         collapseContents(id);
