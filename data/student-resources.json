@@ -406,6 +406,120 @@
     "isPending": false
   },
   {
+    "id": 227,
+    "title": "Multidimensional Arrays",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "Learn the basics of nested arrays.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/MultidimensionalArrays-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/MultidimensionalArrays" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-26",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "multidimensional-arrays.png",
+    "isPending": false
+  },
+  {
+    "id": 228,
+    "title": "Array Methods & Multidimensional Arrays",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Strings & Arrays",
+    "description": "A more in-depth exploration of nested arrays.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/ArrayMethodsAndMultidimensionalArrays-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ArrayMethodsAndMultidimensionalArrays" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2022-09-29",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "array-methods-and-multidimensional-arrays.png",
+    "isPending": false
+  },
+  {
+    "id": 241,
+    "title": "For Loop Basics",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Loops",
+    "description": "Learn the fundamentals of for loops.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/LoopBasics-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/LoopBasics" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-26",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "for-loop-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 242,
+    "title": "While Loops",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Loops",
+    "description": "Learn the fundamentals of while loops.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/WhileLoops-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/WhileLoops" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-28",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "while-loops.png",
+    "isPending": false
+  },
+  {
+    "id": 243,
+    "title": "Next-Level Loops",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Loops",
+    "description": "Take advantage of various looping strategies to DRY your code.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/NextLevelLoops-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/NextLevelLoops" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-29",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "next-level-loops.png",
+    "isPending": false
+  },
+  {
+    "id": 244,
+    "title": "Looping through Multi-dimensional Arrays",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Loops",
+    "description": "Practice looping through 2D and 3D arrays.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/LoopingThruMultiDArrays-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/LoopingThruMultiDArrays" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-29",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "looping-through-multidimensional-arrays.png",
+    "isPending": false
+  },
+  {
     "id": 3,
     "title": "Form Basics: Weekly Planner",
     "category": "Examples & Exercises by Topic",

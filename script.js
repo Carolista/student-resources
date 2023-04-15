@@ -11,10 +11,10 @@ function init() {
 
   // FIXME: Images aren't loading fast enough on GitHub deployment - resize even smaller
 
-  let categoryOptions = ['--Select Category--'];
-  let topicOptions = ['--Select Topic--'];
-  let techOptions = ['--Select Tech--'];
-  let difficultyOptions = ['--Select Difficulty--'];
+  let categoryOptions = ['Filter by category...'];
+  let topicOptions = ['Filter by topic...'];
+  let techOptions = ['Filter by tech...'];
+  let difficultyOptions = ['Filter by difficulty...'];
 
   let allEntries = [];
   let currentEntries = [];
