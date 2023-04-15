@@ -372,8 +372,8 @@ function init() {
 
   window.addEventListener('scroll', function (e) {
     if (
-      document.body.scrollTop > 600 ||
-      document.documentElement.scrollTop > 600
+      document.body.scrollTop > 500 ||
+      document.documentElement.scrollTop > 500
     ) {
       sticky.style.visibility = 'visible';
     } else {
