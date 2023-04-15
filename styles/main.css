@@ -46,7 +46,9 @@
   left: calc(50% - 60px);
   background: #135b85;
   color: #fff;
-  font-size: 0.9rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: none;
+  font-size: 0.8rem;
   font-weight: 400;
   text-align: center;
   justify-content: center;
@@ -62,8 +64,8 @@
 }
 
 .tooltip-wider {
-  left: calc(50% - 80px);
-  width: 160px;
+  left: calc(50% - 180px);
+  width: 360px;
 }
 
 .tooltip:before,
@@ -118,6 +120,15 @@ a:hover .tooltip {
 a:hover .tooltip-left {
   opacity: 1;
   transform: scale(1) translateX(-60px);
+}
+
+.tooltip-link, .tooltip-link:visited {
+  color: #70a9c9;
+  font-weight: 600;
+}
+
+.tooltip-link:hover {
+  color: #a8d3ec;
 }
 
 /*
@@ -545,6 +556,11 @@ select {
 
 .resource-list-item {
   margin-bottom: 5px;
+}
+
+.info-icon {
+  color: #1e6d9b;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 1100px) {

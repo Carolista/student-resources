@@ -208,7 +208,7 @@ function init() {
             <div id="${entry.id}-click-bar" class="content-click-bar">
               <i id="${
                 entry.id
-              }-arrow-icon" class="content-arrow nudge-down fas fa-chevron-circle-down"></i>
+              }-arrow-icon" class="content-arrow nudge-down fa-solid fa-chevron-circle-down"></i>
               <p id="${
                 entry.id
               }-subheader" class="content-subheader">View Details</p>
