@@ -63,11 +63,6 @@
   transform: scale(0);
 }
 
-.tooltip-wider {
-  left: calc(50% - 180px);
-  width: 360px;
-}
-
 .tooltip:before,
 .tooltip:after {
   content: "";
@@ -85,18 +80,21 @@ a:hover .tooltip {
   transform: scale(1) translateY(-10px);
 }
 
-.tooltip-left {
+.tooltip-bottom {
   position: absolute;
-  bottom: 20px;
-  right: calc(100% - 50px);
+  top: 100%;
+  left: calc(50% - 60px);
   background: #135b85;
   color: #fff;
-  font-size: 0.9rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: none;
+  font-size: 0.8rem;
   font-weight: 400;
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px;
+  width: 120px;
+  padding: 5px 10px;
   border-radius: 2px;
   opacity: 0;
   box-shadow: 2px 2px 6px rgba(29, 29, 29, 0.4);
@@ -105,21 +103,26 @@ a:hover .tooltip {
   transform: scale(0);
 }
 
-.tooltip-left:before,
-.tooltip-left:after {
+.tooltip-bottom:before,
+.tooltip-bottom:after {
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: 100%;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-left: 10px solid #135b85;
+  top: -10px;
+  left: calc(50% - 5px);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid #135b85;
 }
 
-.tooltip-container:hover .tooltip-left,
-a:hover .tooltip-left {
+.tooltip-container:hover .tooltip-bottom,
+a:hover .tooltip-bottom {
   opacity: 1;
-  transform: scale(1) translateX(-60px);
+  transform: scale(1) translateY(10px);
+}
+
+.tooltip-wider {
+  left: calc(50% - 140px);
+  width: 280px;
 }
 
 .tooltip-link, .tooltip-link:visited {
@@ -559,7 +562,6 @@ select {
 }
 
 .info-icon {
-  color: #1e6d9b;
   font-size: 1rem;
 }
 

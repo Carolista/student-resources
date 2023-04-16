@@ -1,15 +1,11 @@
 window.addEventListener('load', () => init());
 
+// TODO: Dynamically adjust select options based on overlap (e.g., graded assignment prep vs topical)
+// TODO: Add ability to filter by new exercises only
+// TODO: Add search feature - handle spaces and partial matches
+// TODO: Display a list of recently visited links, e.g. Document for How to Make the Most of Slack, or Starter Code for Next-Level Loops - maybe?
+
 function init() {
-  // TODO: Dynamically adjust select options based on overlap (e.g., graded assignment prep vs topical)
-  // TODO: Add ability to filter by new exercises only
-  // TODO: Add search feature - handle spaces and partial matches
-  // TODO: Add a suggestion box
-  // TODO: Display a list of recently visited links, e.g. Document for How to Make the Most of Slack, or Starter Code for Next-Level Loops - maybe?
-
-  // TODO: Decide how to sort results before displaying on page and implement
-
-  // FIXME: Images aren't loading fast enough on GitHub deployment - resize even smaller
 
   let categoryOptions = ['Filter by category...'];
   let topicOptions = ['Filter by topic...'];
@@ -21,7 +17,6 @@ function init() {
 
   let cards = [];
 
-  // const searchTerm = document.querySelector("#search-term");
   const categorySelect = document.getElementById('category-select');
   const topicSelect = document.getElementById('topic-select');
   const techSelect = document.getElementById('tech-select');
