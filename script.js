@@ -8,9 +8,9 @@ window.addEventListener('load', () => init());
 function init() {
 
   let categoryOptions = ['Filter by category...'];
-  let topicOptions = ['Filter by topic...'];
-  let techOptions = ['Filter by tech...'];
-  let difficultyOptions = ['Filter by difficulty...'];
+  let topicOptions = [];
+  let techOptions = [];
+  let difficultyOptions = ['Filter by difficulty...', 'Basic', 'Moderate', 'Challenging'];
 
   let allEntries = [];
   let currentEntries = [];
@@ -75,6 +75,10 @@ function init() {
         }
       } 
     });
+    topicOptions.sort();
+    topicOptions.unshift('Filter by topic...');
+    techOptions.sort();
+    techOptions.unshift('Filter by tech...');
     populateSelects();
     updateResults(true);
   }

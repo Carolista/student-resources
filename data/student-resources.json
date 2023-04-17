@@ -196,7 +196,7 @@
     "note": "",
     "releaseDate": "2020-10-14",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "myspace-fun-facts.png",
     "isPending": false
   },
@@ -214,7 +214,7 @@
     "note": "",
     "releaseDate": "2020-10-08",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "mad-libs.png",
     "isPending": false
   },
@@ -233,7 +233,7 @@
     "note": "",
     "releaseDate": "2021-03-11",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "getting-user-input.png",
     "isPending": false
   },
@@ -252,7 +252,7 @@
     "note": "",
     "releaseDate": "2022-09-15",
     "updateDate": "2023-04-14",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "data-type-conversions.png",
     "isPending": false
   },
@@ -270,7 +270,7 @@
     "note": "",
     "releaseDate": "2020-10-08",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "cookies-cream.png",
     "isPending": false
   },
@@ -289,7 +289,7 @@
     "note": "",
     "releaseDate": "2020-10-14",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "terms-conditions.png",
     "isPending": false
   },
@@ -308,7 +308,7 @@
     "note": "",
     "releaseDate": "2020-10-11",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "string-basics.png",
     "isPending": false
   },
@@ -327,7 +327,7 @@
     "note": "",
     "releaseDate": "2020-10-26",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "string-methods.png",
     "isPending": false
   },
@@ -346,7 +346,7 @@
     "note": "",
     "releaseDate": "2020-10-09",
     "updateDate": "2023-04-14",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "template-literals.png",
     "isPending": false
   },
@@ -365,7 +365,7 @@
     "note": "",
     "releaseDate": "2020-10-13",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "practice-with-arrays.png",
     "isPending": false
   },
@@ -383,7 +383,7 @@
     "note": "",
     "releaseDate": "2021-04-21",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "strings-vs-arrays.png",
     "isPending": false
   },
@@ -401,7 +401,7 @@
     "note": "",
     "releaseDate": "2021-04-21",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "method-chaining.png",
     "isPending": false
   },
@@ -420,7 +420,7 @@
     "note": "",
     "releaseDate": "2020-10-26",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "multidimensional-arrays.png",
     "isPending": false
   },
@@ -439,7 +439,7 @@
     "note": "",
     "releaseDate": "2022-09-29",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "array-methods-and-multidimensional-arrays.png",
     "isPending": false
   },
@@ -458,7 +458,7 @@
     "note": "",
     "releaseDate": "2020-10-26",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "for-loop-basics.png",
     "isPending": false
   },
@@ -477,7 +477,7 @@
     "note": "",
     "releaseDate": "2020-10-28",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "while-loops.png",
     "isPending": false
   },
@@ -496,7 +496,7 @@
     "note": "",
     "releaseDate": "2020-10-29",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "next-level-loops.png",
     "isPending": false
   },
@@ -515,7 +515,7 @@
     "note": "",
     "releaseDate": "2020-10-29",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "looping-through-multidimensional-arrays.png",
     "isPending": false
   },
@@ -534,7 +534,7 @@
     "note": "",
     "releaseDate": "2020-10-30",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "function-basics.png",
     "isPending": false
   },
@@ -553,7 +553,7 @@
     "note": "",
     "releaseDate": "2020-10-30",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "helper-functions.png",
     "isPending": false
   },
@@ -571,7 +571,7 @@
     "note": "",
     "releaseDate": "2021-03-11",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "variable-scope.png",
     "isPending": false
   },
@@ -590,7 +590,7 @@
     "note": "",
     "releaseDate": "",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "",
     "isPending": true
   },
@@ -609,7 +609,7 @@
     "note": "",
     "releaseDate": "2020-03-29",
     "updateDate": "2023-04-16",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "birthday-candles.png",
     "isPending": false
   },
@@ -707,7 +707,7 @@
     "note": "",
     "releaseDate": "2020-10-18",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "object-basics.png",
     "isPending": false
   },
@@ -764,7 +764,7 @@
     "note": "",
     "releaseDate": "2021-04-21",
     "updateDate": "",
-    "difficulty": "Easy",
+    "difficulty": "Basic",
     "image": "objects-with-methods.png",
     "isPending": false
   },
@@ -772,7 +772,7 @@
     "id": 3,
     "title": "Form Basics: Weekly Planner",
     "category": "Examples & Exercises by Topic",
-    "topic": "The DOM",
+    "topic": "DOM",
     "description": "Form validation and adding HTML to a page in the DOM",
     "links": [
       { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Form-Basics" },
