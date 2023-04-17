@@ -520,6 +520,179 @@
     "isPending": false
   },
   {
+    "id": 251,
+    "title": "Function Basics",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Functions",
+    "description": "Get a better understanding of basic function syntax and a little practice.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/FunctionBasics-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/FunctionBasics" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-30",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "function-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 252,
+    "title": "Writing Helper Functions",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Functions",
+    "description": "Learn how to DRY your code by creating helper functions for your primary functions.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/HelperFunctions-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/HelperFunctions" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-30",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "helper-functions.png",
+    "isPending": false
+  },
+  {
+    "id": 253,
+    "title": "Variable Scope",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Functions",
+    "description": "Learn why it is important to scope your variables correctly.",
+    "links": [
+      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/VariableScope" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-03-11",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "variable-scope.png",
+    "isPending": false
+  },
+  {
+    "id": 254,
+    "title": "Anonymous Functions",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Functions",
+    "description": "",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "",
+    "isPending": true
+  },
+  {
+    "id": 255,
+    "title": "Birthday Candles",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Functions",
+    "description": "Build your problem-solving skills using functions, loops, and conditionals.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/BirthdayCandles-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/BirthdayCandles" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-03-29",
+    "updateDate": "2023-04-16",
+    "difficulty": "Easy",
+    "image": "birthday-candles.png",
+    "isPending": false
+  },
+  {
+    "id": 256,
+    "title": "Recursion",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Functions",
+    "description": "",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "",
+    "isPending": true
+  },
+  {
+    "id": 257,
+    "title": "Fun with Circles",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Functions",
+    "description": "Create an interactive program that prints circles of different diameters.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/FunWithCircles-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/FunWithCircles" },
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/FunWithCircles?v=1" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2019-08-21",
+    "updateDate": "2020-10-03",
+    "difficulty": "Challenging",
+    "image": "fun-with-circles.png",
+    "isPending": false
+  },
+  {
+    "id": 258,
+    "title": "Interactive Caesar Cipher",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Functions",
+    "description": "A fun take on the classic caesar cipher problem.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/CaesarCipher-Interactive-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/CaesarCipher-Interactive" },
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/CaesarCipher-Interactive?v=1" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-04",
+    "updateDate": "",
+    "difficulty": "Challenging",
+    "image": "caesar-cipher.png",
+    "isPending": false
+  },
+  {
+    "id": 259,
+    "title": "Convert to Roman Numerals",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Functions",
+    "description": "A challenging and interesting problem to solve!",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/ConvertToRomanNumerals-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ConvertToRomanNumerals" },
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/ConvertToRomanNumerals?v=1" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-04",
+    "updateDate": "2023-04-16",
+    "difficulty": "Challenging",
+    "image": "roman-numerals.png",
+    "isPending": false
+  },
+  {
     "id": 3,
     "title": "Form Basics: Weekly Planner",
     "category": "Examples & Exercises by Topic",
@@ -553,7 +726,7 @@
     "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
     "releaseDate": "2020-10-25",
     "updateDate": "",
-    "difficulty": "Challenging",
+    "difficulty": "Moderate",
     "image": "fetching-json.png",
     "isPending": false
   },
@@ -577,25 +750,6 @@
     "updateDate": "",
     "difficulty": "Moderate",
     "image": "physician-directory.png",
-    "isPending": false
-  },
-  {
-    "id": 6,
-    "title": "Kaleidoscope",
-    "category": "Personal Projects",
-    "topic": "The DOM",
-    "description": "Relax and create colorful, mirrored designs",
-    "links": [
-      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-DOM-Kaleidoscope" },
-      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-DOM-Kaleidoscope/" }
-    ],
-    "tech": ["HTML", "CSS", "JavaScript"],
-    "requirements": ["GitHub Account", "local IDE", "Git"],
-    "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
-    "releaseDate": "2020-10-18",
-    "updateDate": "",
-    "difficulty": "Challenging",
-    "image": "kaleidoscope.png",
     "isPending": false
   }
 ]
