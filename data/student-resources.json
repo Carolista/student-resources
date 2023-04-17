@@ -693,6 +693,82 @@
     "isPending": false
   },
   {
+    "id": 271,
+    "title": "Object Basics",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Objects",
+    "description": "Practice creating objects with key/value pairs and accessing & modifying their values.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/ObjectBasics-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ObjectBasics" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-18",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "object-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 272,
+    "title": "Object Ops",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Objects",
+    "description": "Practice looping through object keys and arrays within objects.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/ObjectOps-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ObjectOps" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-31",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "object-ops.png",
+    "isPending": false
+  },
+  {
+    "id": 273,
+    "title": "Objects: For...In Loops",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Objects",
+    "description": "Get some in-depth practice working with more complex objects.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/ObjectForInLoops-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ObjectForInLoops" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-04-20",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "object-for-in-loops.png",
+    "isPending": false
+  },
+  {
+    "id": 274,
+    "title": "Objects with Methods",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Objects",
+    "description": "Learn the different ways to add methods to objects.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/ObjectsWithMethods-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ObjectsWithMethods" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-04-21",
+    "updateDate": "",
+    "difficulty": "Easy",
+    "image": "objects-with-methods.png",
+    "isPending": false
+  },
+  {
     "id": 3,
     "title": "Form Basics: Weekly Planner",
     "category": "Examples & Exercises by Topic",
