@@ -941,6 +941,65 @@
     "isPending": false
   },
   {
+    "id": 321,
+    "title": "Hello, World!",
+    "category": "Examples & Exercises by Topic",
+    "topic": "HTML & CSS",
+    "description": "A very simple exercise in learning basic HTML.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/HTML-HelloWorld?v=1" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/HTML-HelloWorld-StarterCode#index.html" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/HTML-HelloWorld#index.html" }
+    ],
+    "tech": ["HTML"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2019-09-23",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "html-hello-world.png",
+    "isPending": false
+  },
+  {
+    "id": 322,
+    "title": "HTML Tables",
+    "category": "Examples & Exercises by Topic",
+    "topic": "HTML & CSS",
+    "description": "Learn how to code and style different types of tables with HTML and CSS",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/HTMLTables?v=1" },
+      { "linkType": "Example Code", "name": "View Code", "link": "https://replit.com/@CarolineRose/HTMLTables#index.html" }
+    ],
+    "tech": ["HTML", "CSS"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-03-13",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "html-tables.png",
+    "isPending": false
+  },
+  {
+    "id": 323,
+    "title": "My Favorite Hobby",
+    "category": "Examples & Exercises by Topic",
+    "topic": "HTML & CSS",
+    "description": "Put together a simple page and add CSS classes to your HTML.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/MyFavoriteHobby?v=1" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/MyFavoriteHobby-StarterCode#index.html" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/MyFavoriteHobby#index.html" }
+    ],
+    "tech": ["HTML", "CSS"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-03-11",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "my-favorite-hobby.png",
+    "isPending": false
+  },
+  {
     "id": 3,
     "title": "Form Basics: Weekly Planner",
     "category": "Examples & Exercises by Topic",
