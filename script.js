@@ -55,7 +55,7 @@ function init() {
             name: link.name,
             link: link.link,
           })),
-          tech: obj.tech,
+          tech: obj.tech.sort(),
           requirements: obj.requirements,
           note: obj.note,
           releaseDate: obj.releaseDate,

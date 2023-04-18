@@ -1000,16 +1000,16 @@
     "isPending": false
   },
   {
-    "id": 3,
-    "title": "Form Basics: Weekly Planner",
+    "id": 351,
+    "title": "Weekly Planner",
     "category": "Examples & Exercises by Topic",
-    "topic": "DOM",
+    "topic": "Forms",
     "description": "Form validation and adding HTML to a page in the DOM",
     "links": [
       { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-Form-Basics/" },
       { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Form-Basics" }
     ],
-    "tech": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML", "CSS", "JavaScript", "Git"],
     "requirements": ["GitHub Account", "Local IDE", "Git"],
     "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
     "releaseDate": "2020-10-24",
@@ -1019,18 +1019,18 @@
     "isPending": false
   },
   {
-    "id": 4,
+    "id": 361,
     "title": "Fetching JSON: Quotes, Advice, & Dad Jokes",
     "category": "Examples & Exercises by Topic",
     "topic": "Fetch & JSON",
-    "description": "Examples of connecting to public APIs with different requirements",
+    "description": "Examples of connecting to public APIs with different requirements.",
     "links": [
       { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-Fetch-JSON-Basics/" },
       { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Fetch-JSON-Basics" }
     ],
-    "tech": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML", "CSS", "JavaScript", "Git"],
     "requirements": ["GitHub Account", "local IDE", "Git"],
-    "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
+    "note": "FORK both the main and solution branches and then clone it down to your local machine so you can practice!",
     "releaseDate": "2020-10-25",
     "updateDate": "",
     "difficulty": "Moderate",
