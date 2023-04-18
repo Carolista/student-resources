@@ -880,7 +880,7 @@
     "note": "",
     "releaseDate": "2022-10-25",
     "updateDate": "",
-    "difficulty": "Moderate",
+    "difficulty": "Basic",
     "image": "tdd-basics.png",
     "isPending": false
   },
@@ -901,6 +901,43 @@
     "updateDate": "",
     "difficulty": "Basic",
     "image": "handling-exceptions.png",
+    "isPending": false
+  },
+  {
+    "id": 311,
+    "title": "JavaScript Class Basics",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Classes",
+    "description": "Practice creating classes and working with properties and methods.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/ClassBasics-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ClassBasics" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2022-10-20",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "class-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 312,
+    "title": "JavaScript Class Inheritance",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Classes",
+    "description": "Multiple examples of class inheritance with a refreshing twist.",
+    "links": [
+      { "linkType": "Example Code", "name": "View Code", "link": "https://replit.com/@CarolineRose/ILikeColdBeverage" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2019-09-12",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "class-inheritance.png",
     "isPending": false
   },
   {
