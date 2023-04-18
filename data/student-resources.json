@@ -866,6 +866,44 @@
     "isPending": false
   },
   {
+    "id": 291,
+    "title": "TDD Basics",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Unit Testing",
+    "description": "Practice TDD while writing a simple function.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/TDD-Basics-StarterCode#index.js" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/TDD-Basics#index.js" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2022-10-25",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "tdd-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 301,
+    "title": "Handling Exceptions",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Exceptions",
+    "description": "Learn different ways to create custom errors, throw errors, and handle errors.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/ExceptionsPractice-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ExceptionsPractice" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2022-10-31",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "handling-exceptions.png",
+    "isPending": false
+  },
+  {
     "id": 3,
     "title": "Form Basics: Weekly Planner",
     "category": "Examples & Exercises by Topic",
