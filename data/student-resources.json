@@ -856,7 +856,7 @@
       { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/TDD-Basics-StarterCode#index.js" },
       { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/TDD-Basics#index.js" }
     ],
-    "tech": ["JavaScript"],
+    "tech": ["JavaScript", "Jasmine"],
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2022-10-25",
