@@ -1256,13 +1256,33 @@
     "isPending": false
   },
   {
+    "id": 531,
+    "title": "As Easy as Apple Pie",
+    "category": "Examples & Exercises by Topic",
+    "topic": "GA#4: HTML Me Something",
+    "description": "Combine your knowledge of HTML and CSS to prep for Graded Assignment #4.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-A4-prep-Apple-Pie/" },
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/1M3zCBWcvMs" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-A4-prep-Apple-Pie" }
+    ],
+    "tech": ["HTML", "CSS", "Git"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "FORK all branches and then clone it down to your local machine so you can practice!",
+    "releaseDate": "2020-10-13",
+    "updateDate": "2021-05-22",
+    "difficulty": "Basic",
+    "image": "apple-pie.png",
+    "isPending": false
+  },
+  {
     "id": 532,
     "title": "Small Business Savvy",
     "category": "Graded Assignment Prep",
     "topic": "GA#4: HTML Me Something",
-    "description": "Combine your knowledge of HTML and CSS to prep for Graded Assignment #4.",
+    "description": "This project will MORE than prepare you for Graded Assignment #4!",
     "links": [
-
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/SmallBusinessSavvy?v=1" },
       { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/SmallBusinessSavvy-StarterCode" },
       { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/SmallBusinessSavvy" }
     ],
@@ -1273,6 +1293,66 @@
     "updateDate": "",
     "difficulty": "Challenging",
     "image": "yellow-bird.png",
+    "isPending": false
+  },
+  {
+    "id": 541,
+    "title": "Inspired Design",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#5: Launch Checklist Form",
+    "description": "Use your knowledge of the DOM to prep for part of Graded Assignment #5.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-A5-prep-1/" },
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/_m9OpzJXI_k" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-A5-prep-1" }
+    ],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "FORK all branches and then clone it down to your local machine so you can practice!",
+    "releaseDate": "2020-10-17",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "inspired-design.png",
+    "isPending": false
+  },
+  {
+    "id": 542,
+    "title": "Pour Me Another",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#5: Launch Checklist Form",
+    "description": "Use your knowledge of the DOM, JSON, fetch, and form validation to prep for Graded Assignment #5.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-A5-Prep-3/" },
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/ndus1pz1bl8" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-A5-Prep-3" }
+    ],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "FORK all branches and then clone it down to your local machine so you can practice!",
+    "releaseDate": "2021-06-13",
+    "updateDate": "",
+    "difficulty": "Challenging",
+    "image": "pour-me-another.png",
+    "isPending": false
+  },
+  {
+    "id": 543,
+    "title": "Trivia Time",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#5: Launch Checklist Form",
+    "description": "This project will MORE than prepare you for Graded Assignment #5!",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-A5-prep-2/" },
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/9qCaM5dJXRU" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-A5-prep-2" }
+    ],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "FORK all branches and then clone it down to your local machine so you can practice!",
+    "releaseDate": "2020-10-24",
+    "updateDate": "",
+    "difficulty": "Extra Challenging",
+    "image": "trivia-time.png",
     "isPending": false
   },
   {
