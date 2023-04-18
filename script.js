@@ -7,10 +7,18 @@ window.addEventListener('load', () => init());
 
 function init() {
 
+  let difficultyDisplayText = {
+    "None": "Filter by difficulty...",
+    "Basic": "Total N00b ¯\\_(ツ)_/¯",
+    "Moderate": "Tell Me More...",
+    "Challenging": "Challenge. Accepted.",
+    "Extra Challenging": "To Infinity, and Beyond!",
+  };
+
   let categoryOptions = ['Filter by category...'];
   let topicOptions = [];
   let techOptions = [];
-  let difficultyOptions = ['Filter by difficulty...', 'Basic', 'Moderate', 'Challenging'];
+  let difficultyOptions = ["None", "Basic", "Moderate", "Challenging", "Extra Challenging"];
 
   let allEntries = [];
   let currentEntries = [];
@@ -68,11 +76,6 @@ function init() {
             techOptions.push(tech);
           }
         });
-        if (
-          obj.difficulty && !difficultyOptions.includes(obj.difficulty)
-        ) {
-          difficultyOptions.push(obj.difficulty);
-        }
       } 
     });
     topicOptions.sort();
@@ -85,16 +88,16 @@ function init() {
 
   function populateSelects() {
     categoryOptions.forEach((category, i) => {
-      categorySelect.innerHTML += `<option id="category-${i}">${category}`;
+      categorySelect.innerHTML += `<option id="category-${i}" value="${category}">${category}</option>`;
     });
     topicOptions.forEach((topic, i) => {
-      topicSelect.innerHTML += `<option id="topic-${i}">${topic}`;
+      topicSelect.innerHTML += `<option id="topic-${i}" value="${topic}">${topic}</option>`;
     });
     techOptions.forEach((tech, i) => {
-      techSelect.innerHTML += `<option id="tech-${i}">${tech}`;
+      techSelect.innerHTML += `<option id="tech-${i}" value="${tech}">${tech}</option>`;
     });
     difficultyOptions.forEach((difficulty, i) => {
-      difficultySelect.innerHTML += `<option id="difficulty-${i}">${difficulty}`;
+      difficultySelect.innerHTML += `<option id="difficulty-${i}" value="${difficulty}">${difficultyDisplayText[difficulty]}</option>`;
     });
   }
 
@@ -168,7 +171,7 @@ function init() {
         <div>
           <p class="resource-subheader">Difficulty</p>
           <div class="resource-list">
-            <p class="resource-list-item">${entry.difficulty}</p>
+            <p class="resource-list-item">${difficultyDisplayText[entry.difficulty]} (${entry.difficulty})</p>
           </div>
         </div>
       `;

@@ -13,7 +13,7 @@
     "note": "",
     "releaseDate": "",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Basic",
     "image": "",
     "isPending": true
   },
@@ -31,7 +31,7 @@
     "note": "",
     "releaseDate": "",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Basic",
     "image": "",
     "isPending": true
   },
@@ -49,7 +49,7 @@
     "note": "",
     "releaseDate": "2021-04-03",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Basic",
     "image": "slack.png",
     "isPending": false
   },
@@ -67,7 +67,7 @@
     "note": "",
     "releaseDate": "2021-03-30",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Basic",
     "image": "tips-tricks.png",
     "isPending": false
   },
@@ -85,7 +85,7 @@
     "note": "",
     "releaseDate": "2021-03-10",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Basic",
     "image": "how-to-google.png",
     "isPending": false
   },
@@ -103,7 +103,7 @@
     "note": "",
     "releaseDate": "2021-04-17",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Moderate",
     "image": "how-to-create-program.png",
     "isPending": false
   },
@@ -122,7 +122,7 @@
     "note": "",
     "releaseDate": "2021-03-11",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Basic",
     "image": "debugging.png",
     "isPending": false
   },
@@ -140,7 +140,7 @@
     "note": "",
     "releaseDate": "",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Basic",
     "image": "",
     "isPending": true
   },
@@ -158,7 +158,7 @@
     "note": "",
     "releaseDate": "",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Basic",
     "image": "",
     "isPending": true
   },
@@ -177,7 +177,7 @@
     "note": "",
     "releaseDate": "2020-11-30",
     "updateDate": "",
-    "difficulty": "",
+    "difficulty": "Basic",
     "image": "home-learning-environment.png",
     "isPending": false
   },
@@ -263,7 +263,7 @@
     "topic": "Conditionals",
     "description": "How to use booleans and conditional statements with if/else blocks to handle logic",
     "links": [
-      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" }
+      { "linkType": "Example Code", "name": "View Code", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
@@ -376,7 +376,7 @@
     "topic": "Strings & Arrays",
     "description": "A few examples illustrating the differences and similarities when working with strings and arrays.",
     "links": [
-      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/StringsVSArrays" }
+      { "linkType": "Example Code", "name": "View Code", "link": "https://repl.it/@CarolineRose/StringsVSArrays" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
@@ -394,7 +394,7 @@
     "topic": "Strings & Arrays",
     "description": "Examples of method chaining when working with strings and arrays.",
     "links": [
-      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/MethodChainingExplained" }
+      { "linkType": "Example Code", "name": "View Code", "link": "https://repl.it/@CarolineRose/MethodChainingExplained" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
@@ -564,7 +564,7 @@
     "topic": "Functions",
     "description": "Learn why it is important to scope your variables correctly.",
     "links": [
-      { "linkType": "Examples", "name": "View Examples", "link": "https://repl.it/@CarolineRose/VariableScope" }
+      { "linkType": "Example Code", "name": "View Code", "link": "https://repl.it/@CarolineRose/VariableScope" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
@@ -639,9 +639,9 @@
     "topic": "Functions",
     "description": "Create an interactive program that prints circles of different diameters.",
     "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/FunWithCircles?v=1" },
       { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/FunWithCircles-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/FunWithCircles" },
-      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/FunWithCircles?v=1" }
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/FunWithCircles" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
@@ -659,9 +659,9 @@
     "topic": "Functions",
     "description": "A fun take on the classic caesar cipher problem.",
     "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/CaesarCipher-Interactive?v=1" },
       { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/CaesarCipher-Interactive-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/CaesarCipher-Interactive" },
-      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/CaesarCipher-Interactive?v=1" }
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/CaesarCipher-Interactive" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
@@ -679,9 +679,9 @@
     "topic": "Functions",
     "description": "A challenging and interesting problem to solve!",
     "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/ConvertToRomanNumerals?v=1" },
       { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/ConvertToRomanNumerals-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ConvertToRomanNumerals" },
-      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/ConvertToRomanNumerals?v=1" }
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/ConvertToRomanNumerals" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
@@ -769,14 +769,111 @@
     "isPending": false
   },
   {
+    "id": 281,
+    "title": "Geometry",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Modules",
+    "description": "Practice creating, importing, and using code in a module.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/Modules-Geometry-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/Modules-Geometry" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-04",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "modules-geometry.png",
+    "isPending": false
+  },
+  {
+    "id": 282,
+    "title": "Morse Code",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Modules",
+    "description": "Practice using modules and create an interactive morse code translator.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/Modules-MorseCode?v=1" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/Modules-MorseCode-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/Modules-MorseCode" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-04",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "modules-morse-code.png",
+    "isPending": false
+  },
+  {
+    "id": 283,
+    "title": "Guess What?",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Modules",
+    "description": "For students who enjoyed GA#2, Scrabble Scorer, and want a bigger challenge.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/GuessWhat?v=1" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/GuessWhat-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/GuessWhat" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-03-28",
+    "updateDate": "",
+    "difficulty": "Extra Challenging",
+    "image": "guess-what.png",
+    "isPending": false
+  },
+  {
+    "id": 284,
+    "title": "21 (Blackjack)",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Modules",
+    "description": "An example of a more complex program with multiple modules.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/ModulesExample-21Game?v=1" },
+      { "linkType": "Code", "name": "View Code", "link": "https://replit.com/@CarolineRose/ModulesExample-21Game" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2022-10-17",
+    "updateDate": "",
+    "difficulty": "Extra Challenging",
+    "image": "21-game.png",
+    "isPending": false
+  },
+  {
+    "id": 285,
+    "title": "Yahtzee!",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Modules",
+    "description": "An example of a more complex program with multiple modules.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/Yahtzee?v=1" },
+      { "linkType": "Code", "name": "View Code", "link": "https://replit.com/@CarolineRose/Yahtzee" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2022-10-18",
+    "updateDate": "",
+    "difficulty": "Extra Challenging",
+    "image": "yahtzee.png",
+    "isPending": false
+  },
+  {
     "id": 3,
     "title": "Form Basics: Weekly Planner",
     "category": "Examples & Exercises by Topic",
     "topic": "DOM",
     "description": "Form validation and adding HTML to a page in the DOM",
     "links": [
-      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Form-Basics" },
-      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-Form-Basics/" }
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-Form-Basics/" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Form-Basics" }
     ],
     "tech": ["HTML", "CSS", "JavaScript"],
     "requirements": ["GitHub Account", "Local IDE", "Git"],
@@ -794,8 +891,8 @@
     "topic": "Fetch & JSON",
     "description": "Examples of connecting to public APIs with different requirements",
     "links": [
-      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Fetch-JSON-Basics" },
-      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-Fetch-JSON-Basics/" }
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-Fetch-JSON-Basics/" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Fetch-JSON-Basics" }
     ],
     "tech": ["HTML", "CSS", "JavaScript"],
     "requirements": ["GitHub Account", "local IDE", "Git"],
@@ -813,10 +910,10 @@
     "topic": "Assignment 2: Scrabble Scorer",
     "description": "Learn how to put together a program with multiple functions for the console and prepare for Graded Assignment 2: Scrabble Scorer",
     "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/PhysicianDirectory?v=1" },
       { "linkType": "Document", "name": "Google Doc", "link": "https://tinyurl.com/xt5ux8h6" },
       { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/PhysicianDirectory-StarterCode#index.js" },
       { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/PhysicianDirectory#index.js" },
-      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/PhysicianDirectory?v=1" },
       { "linkType": "Video", "name": "Watch Video", "link": "https://youtu.be/tbLMj7h9Ghk" }
     ],
     "tech": ["JavaScript"],
@@ -824,7 +921,7 @@
     "note": "",
     "releaseDate": "2020-04-10",
     "updateDate": "",
-    "difficulty": "Moderate",
+    "difficulty": "Challenging",
     "image": "physician-directory.png",
     "isPending": false
   }
