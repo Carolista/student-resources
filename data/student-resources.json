@@ -1144,7 +1144,7 @@
     "id": 521,
     "title": "Backpacks",
     "category": "Graded Assignment Prep",
-    "topic": "GA#3: Scrabble Scorer",
+    "topic": "GA#3: Mars Rover",
     "description": "Combine your knowledge of modules, classes, and unit testing to prep for Graded Assignment #3.",
     "links": [
       { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/Tu-wndMkWhE" },
@@ -1160,6 +1160,159 @@
     "updateDate": "2022-11-05",
     "difficulty": "Challenging",
     "image": "backpacks.png",
+    "isPending": false
+  },
+  {
+    "id": 532,
+    "title": "Small Business Savvy",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#4: HTML Me Something",
+    "description": "Combine your knowledge of HTML and CSS to prep for Graded Assignment #4.",
+    "links": [
+
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/SmallBusinessSavvy-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/SmallBusinessSavvy" }
+    ],
+    "tech": ["HTML", "CSS"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-10",
+    "updateDate": "",
+    "difficulty": "Challenging",
+    "image": "yellow-bird.png",
+    "isPending": false
+  },
+  {
+    "id": 801,
+    "title": "Advanced JavaScript, Part 1",
+    "category": "Career Prep",
+    "topic": "Advanced JavaScript",
+    "description": "Learn about the spread operator, rest operator, and destructuring.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/AdvancedJavaScript-Part1-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/AdvancedJavaScript-Part1" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-07-14",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "advanced-js-1.png",
+    "isPending": false
+  },
+  {
+    "id": 802,
+    "title": "Advanced JavaScript, Part 2",
+    "category": "Career Prep",
+    "topic": "Advanced JavaScript",
+    "description": "Learn about arrow functions and common higher-order functions like .map() and .forEach().",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/AdvancedJavaScript-Part2-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/AdvancedJavaScript-Part2" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-07-15",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "advanced-js-2.png",
+    "isPending": false
+  },
+  {
+    "id": 811,
+    "title": "Jenny",
+    "category": "Career Prep",
+    "topic": "Live Coding",
+    "description": "Practice your live coding skills by manipulating a string of characters.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/LiveCodingPractice-Jenny-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/LiveCodingPractice-Jenny" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-04-05",
+    "updateDate": "2023-04-15",
+    "difficulty": "Basic",
+    "image": "live-coding-jenny.png",
+    "isPending": false
+  },
+  {
+    "id": 812,
+    "title": "Highest Number",
+    "category": "Career Prep",
+    "topic": "Live Coding",
+    "description": "Practice your live coding skills by finding the highest number in an array.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/LiftoffLiveCodingExample2-HighestNumber-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/LiftoffLiveCodingExample2-HighestNumber" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-12-22",
+    "updateDate": "2023-04-15",
+    "difficulty": "Basic",
+    "image": "live-coding-highest-number.png",
+    "isPending": false
+  },
+  {
+    "id": 813,
+    "title": "Palindromes",
+    "category": "Career Prep",
+    "topic": "Live Coding",
+    "description": "Practice your live coding skills by determining which words in an array are palindromes.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/LiveCodingPractice-Palindromes-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/LiveCodingPractice-Palindromes" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-04-12",
+    "updateDate": "2023-04-15",
+    "difficulty": "Basic",
+    "image": "live-coding-palindromes.png",
+    "isPending": false
+  },
+  {
+    "id": 814,
+    "title": "Longest Word",
+    "category": "Career Prep",
+    "topic": "Live Coding",
+    "description": "Practice your live coding skills by finding the longest word with no repeating letters in an array.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/LiveCodingPractice-LongestWord-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/LiveCodingPractice-LongestWord" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-12-22",
+    "updateDate": "2023-04-15",
+    "difficulty": "Moderate",
+    "image": "live-coding-longest-word.png",
+    "isPending": false
+  },
+  {
+    "id": 815,
+    "title": "Student Attendance",
+    "category": "Career Prep",
+    "topic": "Live Coding",
+    "description": "Practice your live coding skills by finding the longest word in an array.",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/LiftoffLiveCodingExample-StudentAttendance-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/LiftoffLiveCodingExample-StudentAttendance" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2021-12-11",
+    "updateDate": "2023-04-15",
+    "difficulty": "Moderate",
+    "image": "live-coding-student-attendance.png",
     "isPending": false
   }
 ]
