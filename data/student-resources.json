@@ -1038,25 +1038,128 @@
     "isPending": false
   },
   {
-    "id": 5,
-    "title": "Physician Directory",
-    "category": "Graded Assignment Prep",
-    "topic": "Assignment 2: Scrabble Scorer",
-    "description": "Learn how to put together a program with multiple functions for the console and prepare for Graded Assignment 2: Scrabble Scorer",
+    "id": 371,
+    "title": "TypeScript Basics",
+    "category": "Examples & Exercises by Topic",
+    "topic": "TypeScript",
+    "description": "Learn the fundamentals of TypeScript syntax.",
     "links": [
-      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/PhysicianDirectory?v=1" },
-      { "linkType": "Document", "name": "Google Doc", "link": "https://tinyurl.com/xt5ux8h6" },
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/PhysicianDirectory-StarterCode#index.js" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/PhysicianDirectory#index.js" },
-      { "linkType": "Video", "name": "Watch Video", "link": "https://youtu.be/tbLMj7h9Ghk" }
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/TypeScriptBasics-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/TypeScriptBasics" }
+    ],
+    "tech": ["TypeScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2020-10-25",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "typescript-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 501,
+    "title": "Favorite Things",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#1: Candidate Testing",
+    "description": "Practice combining the knowledge & skills needed for Graded Assignment #1.",
+    "links": [
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/5cGQjrRYi0Q" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/FavoriteThings-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/FavoriteThings" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
-    "note": "",
-    "releaseDate": "2020-04-10",
+    "note": "Use the starter code to code along with the live tutorial.",
+    "releaseDate": "2021-03-20",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "favorite-things.png",
+    "isPending": false
+  },
+  {
+    "id": 502,
+    "title": "Haunted House",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#1: Candidate Testing",
+    "description": "Practice combining the knowledge & skills needed for Graded Assignment #1.",
+    "links": [
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/3mp1kY32FbY" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/HauntedHouse-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/HauntedHouse" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "Use the starter code to code along with the live tutorial.",
+    "releaseDate": "2020-10-08",
+    "updateDate": "2021-03-27",
+    "difficulty": "Challenging",
+    "image": "haunted-house.png",
+    "isPending": false
+  },
+  {
+    "id": 511,
+    "title": "Physician Directory",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#2: Scrabble Scorer",
+    "description": "Learn how to put together a program with multiple functions and prepare for Graded Assignment #2.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/PhysicianDirectory?v=1" },
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/tbLMj7h9Ghk" },
+      { "linkType": "Document", "name": "Read Guide", "link": "https://tinyurl.com/xt5ux8h6" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/PhysicianDirectory-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/PhysicianDirectory" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "Use the starter code to code along with the live tutorial.",
+    "releaseDate": "2021-04-10",
     "updateDate": "",
     "difficulty": "Challenging",
     "image": "physician-directory.png",
+    "isPending": false
+  },
+  {
+    "id": 512,
+    "title": "Catering Menu",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#2: Scrabble Scorer",
+    "description": "Learn how to put together a program with multiple functions and prepare for Graded Assignment #2.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/CateringMenu?v=1" },
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/q82j9SrBkRk" },
+      { "linkType": "Document", "name": "Read Guide", "link": "https://tinyurl.com/xt5ux8h6" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CarolineRose/CateringMenu-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CarolineRose/CateringMenu" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "Use the starter code to code along with the live tutorial.",
+    "releaseDate": "2021-04-17",
+    "updateDate": "",
+    "difficulty": "Extra Challenging",
+    "image": "catering-menu.png",
+    "isPending": false
+  },
+  {
+    "id": 521,
+    "title": "Backpacks",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#3: Scrabble Scorer",
+    "description": "Combine your knowledge of modules, classes, and unit testing to prep for Graded Assignment #3.",
+    "links": [
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/Tu-wndMkWhE" },
+      { "linkType": "Starter Code", "name": "Start Coding (Part 1)", "link": "https://replit.com/@CarolineRose/GA3Prep-BackpacksPart1-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution (Part 1)", "link": "https://replit.com/@CarolineRose/GA3Prep-BackpacksPart1" },
+      { "linkType": "Starter Code", "name": "Start Coding (Part 2)", "link": "https://replit.com/@CarolineRose/GA3Prep-BackpacksPart2-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution (Part 2)", "link": "https://replit.com/@CarolineRose/GA3Prep-BackpacksPart2" }
+    ],
+    "tech": ["JavaScript", "Jasmine"],
+    "requirements": ["Replit Account"],
+    "note": "Use the starter code to code along with the live tutorial, which covered both parts in one session.",
+    "releaseDate": "2020-10-03",
+    "updateDate": "2022-11-05",
+    "difficulty": "Challenging",
+    "image": "backpacks.png",
     "isPending": false
   }
 ]

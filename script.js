@@ -11,7 +11,7 @@ function init() {
     "None": "Filter by difficulty...",
     "Basic": "Total N00b ¯\\_(ツ)_/¯",
     "Moderate": "Tell Me More...",
-    "Challenging": "Challenge. Accepted.",
+    "Challenging": "Challenge accepted.",
     "Extra Challenging": "To Infinity, and Beyond!",
   };
 
