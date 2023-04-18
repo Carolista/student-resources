@@ -1068,7 +1068,7 @@
     ],
     "tech": ["HTML", "CSS", "JavaScript", "Git"],
     "requirements": ["GitHub Account", "local IDE", "Git"],
-    "note": "FORK both the main and solution branches and then clone it down to your local machine so you can practice!",
+    "note": "FORK all branches and then clone it down to your local machine so you can practice!",
     "releaseDate": "2020-10-25",
     "updateDate": "",
     "difficulty": "Moderate",
@@ -1092,6 +1092,42 @@
     "updateDate": "",
     "difficulty": "Basic",
     "image": "typescript-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 381,
+    "title": "Angular Basics",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Angular",
+    "description": "Create a simple page using components.",
+    "links": [
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Angular-Basics" }
+    ],
+    "tech": ["HTML", "CSS", "TypeScript", "Git", "Angular"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "Read the src/instructions.txt file first once you open the project on your local computer.",
+    "releaseDate": "2020-10-25",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "angular-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 382,
+    "title": "Angular Directives",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Angular",
+    "description": "Create a more complex single-page app using directives.",
+    "links": [
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Angular-Directives" }
+    ],
+    "tech": ["HTML", "CSS", "TypeScript", "Git", "Angular"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "FORK all branches and then clone it down to your local machine so you can practice!",
+    "releaseDate": "2020-11-06",
+    "updateDate": "2021-03-09",
+    "difficulty": "Challenging",
+    "image": "angular-directives.png",
     "isPending": false
   },
   {
