@@ -108,25 +108,6 @@
     "isPending": false
   },
   {
-    "id": 107,
-    "title": "Using console.log To Find Errors",
-    "category": "Make A Strong Start",
-    "topic": "Resources",
-    "description": "A few well-placed comments can help you narrow down your search for errors!",
-    "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole" }
-    ],
-    "tech": [],
-    "requirements": [],
-    "note": "",
-    "releaseDate": "2021-03-11",
-    "updateDate": "",
-    "difficulty": "Basic",
-    "image": "debugging.png",
-    "isPending": false
-  },
-  {
     "id": 108,
     "title": "Naming Conventions",
     "category": "Make A Strong Start",
@@ -1000,6 +981,63 @@
     "isPending": false
   },
   {
+    "id": 341,
+    "title": "DOM Basics: Click Events",
+    "category": "Examples & Exercises by Topic",
+    "topic": "DOM",
+    "description": "Practice handling click events and changing style properties",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-DOM-Basics" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-DOM-Basics/" }
+    ],
+    "tech": ["HTML", "CSS", "JavaScript", "Git"],
+    "requirements": ["GitHub Account", "Local IDE", "Git"],
+    "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
+    "releaseDate": "2020-10-18",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "dom-basics.png",
+    "isPending": false
+  }, 
+  {
+    "id": 342,
+    "title": "Other DOM Events",
+    "category": "Examples & Exercises by Topic",
+    "topic": "DOM",
+    "description": "Mouseover, mouseout, mousedown, mouseup, & more.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-Other-DOM-Events" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Other-DOM-Events/" }
+    ],
+    "tech": ["HTML", "CSS", "JavaScript", "Git"],
+    "requirements": ["GitHub Account", "Local IDE", "Git"],
+    "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
+    "releaseDate": "2020-10-27",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "other-dom-events.png",
+    "isPending": false
+  }, 
+  {
+    "id": 343,
+    "title": "DOM Methodology",
+    "category": "Examples & Exercises by Topic",
+    "topic": "DOM",
+    "description": "How to decide which DOM methods to use to create objects for elements and add listeners.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-DOM-Methodology" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-DOM-Methodology/" }
+    ],
+    "tech": ["HTML", "CSS", "JavaScript", "Git"],
+    "requirements": ["GitHub Account", "Local IDE", "Git"],
+    "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
+    "releaseDate": "2020-10-28",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "dom-methodology.png",
+    "isPending": false
+  }, 
+  {
     "id": 351,
     "title": "Weekly Planner",
     "category": "Examples & Exercises by Topic",
@@ -1054,6 +1092,25 @@
     "updateDate": "",
     "difficulty": "Basic",
     "image": "typescript-basics.png",
+    "isPending": false
+  },
+  {
+    "id": 391,
+    "title": "Finding Logic Errors with console.log",
+    "category": "Examples & Exercises by Topic",
+    "topic": "Debugging",
+    "description": "A few well-placed comments can help you narrow down your search for logic errors!",
+    "links": [
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole-StarterCode" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/DebuggingWithConsole" }
+    ],
+    "tech": [],
+    "requirements": [],
+    "note": "",
+    "releaseDate": "2021-03-11",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "debugging.png",
     "isPending": false
   },
   {
