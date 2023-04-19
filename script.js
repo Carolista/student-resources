@@ -24,10 +24,15 @@ function init() {
   let allTechOptions = [];
   let allDifficultyOptions = ["None", "Basic", "Moderate", "Challenging", "Extra Challenging"];
 
-  let currentCategoryOptions = [];
-  let currentTopicOptions = [];
-  let currentTechOptions = [];
-  let currentDifficultyOptions = [];
+  let currentCategoryOptions = ['Filter by category...'];
+  let currentTopicOptions = ['Filter by topic...'];
+  let currentTechOptions = ['Filter by tech...'];
+  let currentDifficultyOptions = ['None'];
+
+  let currentCategoryValue;
+  let currentTopicValue;
+  let currentTechValue;
+  let currentDifficultyValue;
 
   let allEntries = [];
   let currentEntries = [];
@@ -91,9 +96,9 @@ function init() {
     allTopicOptions.unshift('Filter by topic...');
     allTechOptions.sort();
     allTechOptions.unshift('Filter by tech...');
+    updateResults(true);
     resetSelectOptions();
     populateSelects();
-    updateResults(true);
   }
 
   function resetSelectOptions() {
@@ -103,7 +108,47 @@ function init() {
     currentDifficultyOptions = [...allDifficultyOptions];
   }
 
+  function filterSelectOptions() {
+    currentCategoryOptions = [];
+    currentTopicOptions = [];
+    currentTechOptions = [];
+    currentDifficultyOptions = [];
+
+    let tempDiffOpts = [];
+
+    currentEntries.forEach(entry => {
+      if (!currentCategoryOptions.includes(entry.category)) {
+        currentCategoryOptions.push(entry.category);
+      }
+      if (!currentTopicOptions.includes(entry.topic)) {
+        currentTopicOptions.push(entry.topic);
+      }
+      entry.tech.forEach(tech => {
+        if (!currentTechOptions.includes(tech)) {
+          currentTechOptions.push(tech);
+        }
+      });
+      if (!tempDiffOpts.includes(entry.difficulty)) {
+        tempDiffOpts.push(entry.difficulty);
+      }
+    })
+    
+    currentCategoryOptions.unshift('Filter by category...');
+    currentTopicOptions.sort();
+    currentTopicOptions.unshift('Filter by topic...');
+    currentTechOptions.sort();
+    currentTechOptions.unshift('Filter by tech...');
+    currentDifficultyOptions = allDifficultyOptions.filter(option => {
+      return tempDiffOpts.includes(option);
+    })
+    currentDifficultyOptions.unshift('None');
+  }
+
   function populateSelects() {
+    categorySelect.innerHTML = '';
+    topicSelect.innerHTML = '';
+    techSelect.innerHTML = '';
+    difficultySelect.innerHTML = '';
     currentCategoryOptions.forEach((category, i) => {
       categorySelect.innerHTML += `<option id="category-${i}" value="${category}">${category}</option>`;
     });
@@ -268,7 +313,11 @@ function init() {
       ? `Displaying all ${num} results.`
       : `${num} result${num !== 1 ? 's' : ''} found.`;
     createCards();
+  }
 
+  function updateSelects(isReset = false) {
+    isReset ? resetSelectOptions() : filterSelectOptions();
+    populateSelects();
   }
 
   function expandContents(id) {
@@ -329,6 +378,7 @@ function init() {
         select.style.color = noSelectionColor;
       });
       updateResults(true);
+      updateSelects(true);
     }
   });
 
@@ -347,6 +397,15 @@ function init() {
         e.target.style.color = selectionColor;      
       }
       updateResults();
+      currentCategoryValue = categorySelect.value;
+      currentTopicValue = topicSelect.value;
+      currentTechValue = techSelect.value;
+      currentDifficultyValue = difficultySelect.value;
+      updateSelects();
+      categorySelect.value = currentCategoryValue;
+      topicSelect.value = currentTopicValue;
+      techSelect.value = currentTechValue;
+      difficultySelect.value = currentDifficultyValue;
     }
   });
 
