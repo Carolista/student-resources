@@ -1525,5 +1525,80 @@
     "difficulty": "Moderate",
     "image": "live-coding-student-attendance.png",
     "isPending": false
+  },
+  {
+    "id": 851,
+    "title": "Git Workflow",
+    "category": "Career Prep",
+    "topic": "Capstone Project",
+    "description": "Learn how to collaborate with others in the same Git repo.",
+    "links": [
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/Liftoff-GitWorkflowDemo" }
+    ],
+    "tech": ["Git"],
+    "requirements": ["Git", "GitHub"],
+    "note": "",
+    "releaseDate": "2022-04-17",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "git-workflow.png",
+    "isPending": false
+  },
+  {
+    "id": 852,
+    "title": "Coding a User Story",
+    "category": "Career Prep",
+    "topic": "Capstone Project",
+    "description": "Learn how to code a user story, including creating an API endpoint in a Java/Spring back end and using it with an Angular front end.",
+    "links": [
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/HMTT_PcEyOc" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/Liftoff-UserStoryDemo" }
+    ],
+    "tech": ["JavaScript", "Java", "HTML", "CSS", "Angular", "Spring Boot", "SQL", "Git"],
+    "requirements": ["Git", "GitHub", "Local IDEs", "MySQL Workbench"],
+    "note": "",
+    "releaseDate": "2022-04-29",
+    "updateDate": "",
+    "difficulty": "Challenging",
+    "image": "user-story-demo.png",
+    "isPending": false
+  },
+  {
+    "id": 2101,
+    "title": "Healthy Habits",
+    "category": "Other Tutorials",
+    "topic": "React",
+    "description": "Learn how to manage states, props, and event handling in React.",
+    "links": [
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/pAGn6cIO6Lg" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-React-Studio04" }
+    ],
+    "tech": ["JavaScript", "React", "CSS", "JSX", "Git"],
+    "requirements": ["GitHub", "Local IDE", "Git"],
+    "note": "",
+    "releaseDate": "2021-08-18",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "healthy-habits.png",
+    "isPending": false
+  },
+  {
+    "id": 2102,
+    "title": "Shear Perfection",
+    "category": "Other Tutorials",
+    "topic": "React",
+    "description": "Learn how to use fragments, refs, and portals in React.",
+    "links": [
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/y1uzY5R2Fuk" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-React-Studio10" }
+    ],
+    "tech": ["JavaScript", "React", "CSS", "JSX", "Git", "styled-components", "prop-types"],
+    "requirements": ["GitHub", "Local IDE", "Git"],
+    "note": "",
+    "releaseDate": "2021-09-17",
+    "updateDate": "",
+    "difficulty": "Moderate",
+    "image": "shear-perfection.png",
+    "isPending": false
   }
 ]
