@@ -15,6 +15,11 @@ function init() {
     "Extra Challenging": "To Infinity, and Beyond!",
   };
 
+  let selectionBackgroundColor = "#0b5077";
+  let selectionColor = "white";
+  let noSelectionBackgroundColor = "#a8d3ec";
+  let noSelectionColor = "#0b5077";
+
   let categoryOptions = ['Filter by category...'];
   let topicOptions = [];
   let techOptions = [];
@@ -303,10 +308,13 @@ function init() {
       toggleDisplay(false);
     } else if (e.target.id === 'reset-button') {
       e.preventDefault();
-      categorySelect.value = categoryOptions[0];
-      topicSelect.value = topicOptions[0];
-      techSelect.value = techOptions[0];
-      difficultySelect.value = difficultyOptions[0];
+      let allSelects = [categorySelect, topicSelect, techSelect, difficultySelect];
+      let allOptions = [categoryOptions, topicOptions, techOptions, difficultyOptions];
+      allSelects.forEach((select, i) => {
+        select.value = allOptions[i][0];        
+        select.style.backgroundColor = noSelectionBackgroundColor;
+        select.style.color = noSelectionColor;
+      });
       updateResults(true);
     }
   });
@@ -318,6 +326,13 @@ function init() {
       e.target == techSelect ||
       e.target == difficultySelect
     ) {
+      if (e.target.value.includes("Filter")) {
+        e.target.style.backgroundColor = noSelectionBackgroundColor;
+        e.target.style.color = noSelectionColor;
+      } else {
+        e.target.style.backgroundColor = selectionBackgroundColor;
+        e.target.style.color = selectionColor;      
+      }
       updateResults();
     }
   });
