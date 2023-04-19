@@ -101,68 +101,6 @@ function init() {
     populateSelects();
   }
 
-  function resetSelectOptions() {
-    currentCategoryOptions = [...allCategoryOptions];
-    currentTopicOptions = [...allTopicOptions];
-    currentTechOptions = [...allTechOptions];
-    currentDifficultyOptions = [...allDifficultyOptions];
-  }
-
-  function filterSelectOptions() {
-    currentCategoryOptions = [];
-    currentTopicOptions = [];
-    currentTechOptions = [];
-    currentDifficultyOptions = [];
-
-    let tempDiffOpts = [];
-
-    currentEntries.forEach(entry => {
-      if (!currentCategoryOptions.includes(entry.category)) {
-        currentCategoryOptions.push(entry.category);
-      }
-      if (!currentTopicOptions.includes(entry.topic)) {
-        currentTopicOptions.push(entry.topic);
-      }
-      entry.tech.forEach(tech => {
-        if (!currentTechOptions.includes(tech)) {
-          currentTechOptions.push(tech);
-        }
-      });
-      if (!tempDiffOpts.includes(entry.difficulty)) {
-        tempDiffOpts.push(entry.difficulty);
-      }
-    })
-    
-    currentCategoryOptions.unshift('Filter by category...');
-    currentTopicOptions.sort();
-    currentTopicOptions.unshift('Filter by topic...');
-    currentTechOptions.sort();
-    currentTechOptions.unshift('Filter by tech...');
-    currentDifficultyOptions = allDifficultyOptions.filter(option => {
-      return tempDiffOpts.includes(option);
-    })
-    currentDifficultyOptions.unshift('None');
-  }
-
-  function populateSelects() {
-    categorySelect.innerHTML = '';
-    topicSelect.innerHTML = '';
-    techSelect.innerHTML = '';
-    difficultySelect.innerHTML = '';
-    currentCategoryOptions.forEach((category, i) => {
-      categorySelect.innerHTML += `<option id="category-${i}" value="${category}">${category}</option>`;
-    });
-    currentTopicOptions.forEach((topic, i) => {
-      topicSelect.innerHTML += `<option id="topic-${i}" value="${topic}">${topic}</option>`;
-    });
-    currentTechOptions.forEach((tech, i) => {
-      techSelect.innerHTML += `<option id="tech-${i}" value="${tech}">${tech}</option>`;
-    });
-    currentDifficultyOptions.forEach((difficulty, i) => {
-      difficultySelect.innerHTML += `<option id="difficulty-${i}" value="${difficulty}">${difficultyDisplayText[difficulty]}</option>`;
-    });
-  }
-
   function createCards() {
     cards = [];
     currentEntries.forEach(entry => {
@@ -313,6 +251,68 @@ function init() {
       ? `Displaying all ${num} results.`
       : `${num} result${num !== 1 ? 's' : ''} found.`;
     createCards();
+  }
+
+  function resetSelectOptions() {
+    currentCategoryOptions = [...allCategoryOptions];
+    currentTopicOptions = [...allTopicOptions];
+    currentTechOptions = [...allTechOptions];
+    currentDifficultyOptions = [...allDifficultyOptions];
+  }
+
+  function filterSelectOptions() {
+    currentCategoryOptions = [];
+    currentTopicOptions = [];
+    currentTechOptions = [];
+    currentDifficultyOptions = [];
+
+    let tempDiffOpts = [];
+
+    currentEntries.forEach(entry => {
+      if (!currentCategoryOptions.includes(entry.category)) {
+        currentCategoryOptions.push(entry.category);
+      }
+      if (!currentTopicOptions.includes(entry.topic)) {
+        currentTopicOptions.push(entry.topic);
+      }
+      entry.tech.forEach(tech => {
+        if (!currentTechOptions.includes(tech)) {
+          currentTechOptions.push(tech);
+        }
+      });
+      if (!tempDiffOpts.includes(entry.difficulty)) {
+        tempDiffOpts.push(entry.difficulty);
+      }
+    })
+    
+    currentCategoryOptions.unshift('Filter by category...');
+    currentTopicOptions.sort();
+    currentTopicOptions.unshift('Filter by topic...');
+    currentTechOptions.sort();
+    currentTechOptions.unshift('Filter by tech...');
+    currentDifficultyOptions = allDifficultyOptions.filter(option => {
+      return tempDiffOpts.includes(option);
+    })
+    currentDifficultyOptions.unshift('None');
+  }
+
+  function populateSelects() {
+    categorySelect.innerHTML = '';
+    topicSelect.innerHTML = '';
+    techSelect.innerHTML = '';
+    difficultySelect.innerHTML = '';
+    currentCategoryOptions.forEach((category, i) => {
+      categorySelect.innerHTML += `<option id="category-${i}" value="${category}">${category}</option>`;
+    });
+    currentTopicOptions.forEach((topic, i) => {
+      topicSelect.innerHTML += `<option id="topic-${i}" value="${topic}">${topic}</option>`;
+    });
+    currentTechOptions.forEach((tech, i) => {
+      techSelect.innerHTML += `<option id="tech-${i}" value="${tech}">${tech}</option>`;
+    });
+    currentDifficultyOptions.forEach((difficulty, i) => {
+      difficultySelect.innerHTML += `<option id="difficulty-${i}" value="${difficulty}">${difficultyDisplayText[difficulty]}</option>`;
+    });
   }
 
   function updateSelects(isReset = false) {
