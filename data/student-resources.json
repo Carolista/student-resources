@@ -1528,6 +1528,24 @@
   },
   {
     "id": 851,
+    "title": "Git Practice",
+    "category": "Career Prep",
+    "topic": "Capstone Project",
+    "description": "Practice creating feature branches.",
+    "links": [
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-Liftoff-Git-Exercise" }
+    ],
+    "tech": ["Git"],
+    "requirements": ["GitHub Account", "Local IDE", "Git"],
+    "note": "FORK your own copy and then clone it down to your local machine for exploration and experimentation!",
+    "releaseDate": "",
+    "updateDate": "",
+    "difficulty": "Basic",
+    "image": "git-practice.png",
+    "isPending": true
+  }, 
+  {
+    "id": 852,
     "title": "Git Workflow",
     "category": "Career Prep",
     "topic": "Capstone Project",
@@ -1536,16 +1554,16 @@
       { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/Liftoff-GitWorkflowDemo" }
     ],
     "tech": ["Git"],
-    "requirements": ["Git", "GitHub"],
+    "requirements": ["Git", "GitHub Account"],
     "note": "",
     "releaseDate": "2022-04-17",
     "updateDate": "",
-    "difficulty": "Basic",
+    "difficulty": "Moderate",
     "image": "git-workflow.png",
     "isPending": false
   },
   {
-    "id": 852,
+    "id": 853,
     "title": "Coding a User Story",
     "category": "Career Prep",
     "topic": "Capstone Project",
@@ -1564,7 +1582,7 @@
     "isPending": false
   },
   {
-    "id": 2101,
+    "id": 2001,
     "title": "Healthy Habits",
     "category": "Other Tutorials",
     "topic": "React",
@@ -1583,7 +1601,7 @@
     "isPending": false
   },
   {
-    "id": 2102,
+    "id": 2002,
     "title": "Shear Perfection",
     "category": "Other Tutorials",
     "topic": "React",
@@ -1599,6 +1617,138 @@
     "updateDate": "",
     "difficulty": "Moderate",
     "image": "shear-perfection.png",
+    "isPending": false
+  },
+  {
+    "id": 3001,
+    "title": "Text-Based Games",
+    "category": "Projects for Inspiration",
+    "topic": "Modules",
+    "description": "Interactive program combining Blackjack, Yahtzee!, and Guess What?, with advanced JavaScript Syntax.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://replit.com/@CarolineRose/Games?v=1" },
+      { "linkType": "Example Code", "name": "View Code", "link": "https://replit.com/@CarolineRose/Games" }
+    ],
+    "tech": ["JavaScript"],
+    "requirements": ["Replit Account"],
+    "note": "",
+    "releaseDate": "2022-10-20",
+    "updateDate": "",
+    "difficulty": "Extra Challenging",
+    "image": "games.png",
+    "isPending": false
+  },
+  {
+    "id": 3002,
+    "title": "D&D Dice Roller",
+    "category": "Projects for Inspiration",
+    "topic": "DOM",
+    "description": "A fun little tool for rolling polyhedral dice when playing Dungeons & Dragons.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/DnD-Dice-Roller/" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/DnD-Dice-Roller" }
+    ],
+    "tech": ["JavaScript", "HTML", "CSS"],
+    "requirements": ["GitHub", "Local IDE", "Git"],
+    "note": "",
+    "releaseDate": "2022-11-13",
+    "updateDate": "",
+    "difficulty": "Challenging",
+    "image": "dnd-dice-roller.png",
+    "isPending": false
+  },
+  {
+    "id": 3003,
+    "title": "Kaleidoscope",
+    "category": "Projects for Inspiration",
+    "topic": "DOM",
+    "description": "A tool I created for relaxing and creating pretty kaleidoscope-inspired art.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-DOM-Kaleidoscope/" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-DOM-Kaleidoscope" }
+    ],
+    "tech": ["JavaScript", "HTML", "CSS"],
+    "requirements": ["GitHub", "Local IDE", "Git"],
+    "note": "",
+    "releaseDate": "2020-10-23",
+    "updateDate": "2021-02-18",
+    "difficulty": "Extra Challenging",
+    "image": "kaleidoscope.png",
+    "isPending": false
+  },
+  {
+    "id": 3004,
+    "title": "Lights Out!",
+    "category": "Projects for Inspiration",
+    "topic": "DOM",
+    "description": "My own twist on a classic game — taught me a lot about using transitions for animation.",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/LC-DOM-Lights-Out/" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-DOM-Lights-Out" }
+    ],
+    "tech": ["JavaScript", "HTML", "CSS"],
+    "requirements": ["GitHub", "Local IDE", "Git"],
+    "note": "",
+    "releaseDate": "2020-10-23",
+    "updateDate": "",
+    "difficulty": "Extra Challenging",
+    "image": "lights-out.png",
+    "isPending": false
+  },
+  {
+    "id": 3005,
+    "title": "Dazzle Words",
+    "category": "Projects for Inspiration",
+    "topic": "DOM",
+    "description": "Glimmering letters in a retro, disco style — enter your own text and choose a color scheme!",
+    "links": [
+      { "linkType": "Demo", "name": "Try Demo", "link": "https://carolista.github.io/Dazzle-Words/" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/Dazzle-Words" }
+    ],
+    "tech": ["JavaScript", "HTML", "CSS"],
+    "requirements": ["GitHub", "Local IDE", "Git"],
+    "note": "",
+    "releaseDate": "2020-10-23",
+    "updateDate": "2021-04-17",
+    "difficulty": "Challenging",
+    "image": "dazzle-words.png",
+    "isPending": false
+  },
+  {
+    "id": 3006,
+    "title": "Portfolio Website",
+    "category": "Projects for Inspiration",
+    "topic": "DOM",
+    "description": "Built from scratch with vanilla JavaScript, HTML, and SCSS.",
+    "links": [
+      { "linkType": "Website", "name": "Visit Site", "link": "https://carolista.github.io/" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/carolista.github.io" }
+    ],
+    "tech": ["JavaScript", "HTML", "SCSS"],
+    "requirements": ["GitHub", "Local IDE", "Git"],
+    "note": "",
+    "releaseDate": "2021-04-19",
+    "updateDate": "2023-04-19",
+    "difficulty": "Extra Challenging",
+    "image": "portfolio-website.png",
+    "isPending": false
+  },
+  {
+    "id": 3007,
+    "title": "Student Resources Website",
+    "category": "Projects for Inspiration",
+    "topic": "DOM",
+    "description": "You are here! Built from scratch with vanilla JavaScript, HTML, and SCSS.",
+    "links": [
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/student-resources" }
+    ],
+    "tech": ["JavaScript", "HTML", "SCSS"],
+    "requirements": ["GitHub", "Local IDE", "Git"],
+    "note": "",
+    "releaseDate": "2023-04-19",
+    "updateDate": "",
+    "difficulty": "Challenging",
+    "image": "student-resources.png",
     "isPending": false
   }
 ]
