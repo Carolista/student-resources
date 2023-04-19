@@ -1306,7 +1306,7 @@
       { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/_m9OpzJXI_k" },
       { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-A5-prep-1" }
     ],
-    "tech": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML", "CSS", "JavaScript", "Git"],
     "requirements": ["GitHub Account", "local IDE", "Git"],
     "note": "FORK all branches and then clone it down to your local machine so you can practice!",
     "releaseDate": "2020-10-17",
@@ -1326,7 +1326,7 @@
       { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/ndus1pz1bl8" },
       { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-A5-Prep-3" }
     ],
-    "tech": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML", "CSS", "JavaScript", "Git"],
     "requirements": ["GitHub Account", "local IDE", "Git"],
     "note": "FORK all branches and then clone it down to your local machine so you can practice!",
     "releaseDate": "2021-06-13",
@@ -1346,13 +1346,51 @@
       { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/9qCaM5dJXRU" },
       { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-A5-prep-2" }
     ],
-    "tech": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML", "CSS", "JavaScript", "Git"],
     "requirements": ["GitHub Account", "local IDE", "Git"],
     "note": "FORK all branches and then clone it down to your local machine so you can practice!",
     "releaseDate": "2020-10-24",
     "updateDate": "",
     "difficulty": "Extra Challenging",
     "image": "trivia-time.png",
+    "isPending": false
+  },
+  {
+    "id": 551,
+    "title": "Chattanooga Airport",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#6: Orbit Report",
+    "description": "Use your knowledge of Angular to prep for Graded Assignment #6.",
+    "links": [
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/0ayg6YxQlnA" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/A6-Prep-Chattanooga-Airport" }
+    ],
+    "tech": ["HTML", "CSS", "TypeScript", "Git", "Angular"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "FORK all branches and then clone it down to your local machine so you can practice!",
+    "releaseDate": "2021-07-01",
+    "updateDate": "",
+    "difficulty": "Challenging",
+    "image": "chattanooga-airport.png",
+    "isPending": false
+  },
+  {
+    "id": 552,
+    "title": "All the Lists",
+    "category": "Graded Assignment Prep",
+    "topic": "GA#6: Orbit Report",
+    "description": "This project will MORE than prepare you for Graded Assignment #6!",
+    "links": [
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/FTx20WaC3xI" },
+      { "linkType": "Repository", "name": "GitHub", "link": "https://github.com/Carolista/LC-A6-prep" }
+    ],
+    "tech": ["HTML", "CSS", "TypeScript", "Git", "Angular"],
+    "requirements": ["GitHub Account", "local IDE", "Git"],
+    "note": "FORK all branches and then clone it down to your local machine so you can practice!",
+    "releaseDate": "2020-11-07",
+    "updateDate": "",
+    "difficulty": "Extra Challenging",
+    "image": "all-the-lists.png",
     "isPending": false
   },
   {
