@@ -1,6 +1,5 @@
 window.addEventListener('load', () => init());
 
-// TODO: Dynamically adjust select options based on overlap (e.g., graded assignment prep vs topical)
 // TODO: Add ability to filter by new exercises only
 // TODO: Add search feature - handle spaces and partial matches
 // TODO: Display a list of recently visited links, e.g. Document for How to Make the Most of Slack, or Starter Code for Next-Level Loops - maybe?
@@ -20,10 +19,15 @@ function init() {
   let noSelectionBackgroundColor = "#a8d3ec";
   let noSelectionColor = "#0b5077";
 
-  let categoryOptions = ['Filter by category...'];
-  let topicOptions = [];
-  let techOptions = [];
-  let difficultyOptions = ["None", "Basic", "Moderate", "Challenging", "Extra Challenging"];
+  let allCategoryOptions = ['Filter by category...'];
+  let allTopicOptions = [];
+  let allTechOptions = [];
+  let allDifficultyOptions = ["None", "Basic", "Moderate", "Challenging", "Extra Challenging"];
+
+  let currentCategoryOptions = [];
+  let currentTopicOptions = [];
+  let currentTechOptions = [];
+  let currentDifficultyOptions = [];
 
   let allEntries = [];
   let currentEntries = [];
@@ -70,38 +74,46 @@ function init() {
           isPending: obj.isPending,
         };
         allEntries.push(newEntry);
-        if (!categoryOptions.includes(obj.category)) {
-          categoryOptions.push(obj.category);
+        if (!allCategoryOptions.includes(obj.category)) {
+          allCategoryOptions.push(obj.category);
         }
-        if (!topicOptions.includes(obj.topic)) {
-          topicOptions.push(obj.topic);
+        if (!allTopicOptions.includes(obj.topic)) {
+          allTopicOptions.push(obj.topic);
         }
         obj.tech.forEach(tech => {
-          if (!techOptions.includes(tech)) {
-            techOptions.push(tech);
+          if (!allTechOptions.includes(tech)) {
+            allTechOptions.push(tech);
           }
         });
       } 
     });
-    topicOptions.sort();
-    topicOptions.unshift('Filter by topic...');
-    techOptions.sort();
-    techOptions.unshift('Filter by tech...');
+    allTopicOptions.sort();
+    allTopicOptions.unshift('Filter by topic...');
+    allTechOptions.sort();
+    allTechOptions.unshift('Filter by tech...');
+    resetSelectOptions();
     populateSelects();
     updateResults(true);
   }
 
+  function resetSelectOptions() {
+    currentCategoryOptions = [...allCategoryOptions];
+    currentTopicOptions = [...allTopicOptions];
+    currentTechOptions = [...allTechOptions];
+    currentDifficultyOptions = [...allDifficultyOptions];
+  }
+
   function populateSelects() {
-    categoryOptions.forEach((category, i) => {
+    currentCategoryOptions.forEach((category, i) => {
       categorySelect.innerHTML += `<option id="category-${i}" value="${category}">${category}</option>`;
     });
-    topicOptions.forEach((topic, i) => {
+    currentTopicOptions.forEach((topic, i) => {
       topicSelect.innerHTML += `<option id="topic-${i}" value="${topic}">${topic}</option>`;
     });
-    techOptions.forEach((tech, i) => {
+    currentTechOptions.forEach((tech, i) => {
       techSelect.innerHTML += `<option id="tech-${i}" value="${tech}">${tech}</option>`;
     });
-    difficultyOptions.forEach((difficulty, i) => {
+    currentDifficultyOptions.forEach((difficulty, i) => {
       difficultySelect.innerHTML += `<option id="difficulty-${i}" value="${difficulty}">${difficultyDisplayText[difficulty]}</option>`;
     });
   }
@@ -238,13 +250,13 @@ function init() {
     return allEntries.filter(entry => {
       return (
         (entry.category === categorySelect.value ||
-          categorySelect.value === categoryOptions[0]) &&
+          categorySelect.value === allCategoryOptions[0]) &&
         (entry.topic === topicSelect.value ||
-          topicSelect.value === topicOptions[0]) &&
+          topicSelect.value === allTopicOptions[0]) &&
         (entry.tech.includes(techSelect.value) ||
-          techSelect.value === techOptions[0]) &&
+          techSelect.value === allTechOptions[0]) &&
         (entry.difficulty === difficultySelect.value ||
-          difficultySelect.value === difficultyOptions[0])
+          difficultySelect.value === allDifficultyOptions[0])
       );
     });
   }
@@ -256,6 +268,7 @@ function init() {
       ? `Displaying all ${num} results.`
       : `${num} result${num !== 1 ? 's' : ''} found.`;
     createCards();
+
   }
 
   function expandContents(id) {
@@ -309,7 +322,7 @@ function init() {
     } else if (e.target.id === 'reset-button') {
       e.preventDefault();
       let allSelects = [categorySelect, topicSelect, techSelect, difficultySelect];
-      let allOptions = [categoryOptions, topicOptions, techOptions, difficultyOptions];
+      let allOptions = [allCategoryOptions, allTopicOptions, allTechOptions, allDifficultyOptions];
       allSelects.forEach((select, i) => {
         select.value = allOptions[i][0];        
         select.style.backgroundColor = noSelectionBackgroundColor;
