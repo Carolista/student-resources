@@ -1,7 +1,6 @@
 window.addEventListener('load', () => init());
 
 // TODO: Add ability to filter by new exercises only
-// TODO: Add search feature - handle spaces and partial matches
 // TODO: Display a list of recently visited links, e.g. Document for How to Make the Most of Slack, or Starter Code for Next-Level Loops - maybe?
 
 // TODO: Finish misc. React, Angular, Git exercises and add
