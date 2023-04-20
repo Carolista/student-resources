@@ -19,7 +19,7 @@ function init() {
   let selectionBackgroundColor = "#0b5077";
   let selectionColor = "white";
   let noSelectionBackgroundColor = "#a8d3ec";
-  let noSelectionColor = "#0b5077";
+  let noSelectionColor = "#4790ba";
 
   let allCategoryOptions = ['Filter by category...'];
   let allTopicOptions = [];
@@ -35,6 +35,7 @@ function init() {
   let currentTopicValue;
   let currentTechValue;
   let currentDifficultyValue;
+  let currentKeywordValue;
 
   let allEntries = [];
   let currentEntries = [];
@@ -45,6 +46,8 @@ function init() {
   const topicSelect = document.getElementById('topic-select');
   const techSelect = document.getElementById('tech-select');
   const difficultySelect = document.getElementById('difficulty-select');
+  const keywordInput = document.getElementById('keyword-input');
+
   const resultsCount = document.getElementById('results-count');
   const resultsArea = document.getElementById('results-area');
 
@@ -234,16 +237,26 @@ function init() {
   function getFilteredEntries() {
     return allEntries.filter(entry => {
       return (
-        (entry.category === categorySelect.value ||
-          categorySelect.value === allCategoryOptions[0]) &&
-        (entry.topic === topicSelect.value ||
-          topicSelect.value === allTopicOptions[0]) &&
-        (entry.tech.includes(techSelect.value) ||
-          techSelect.value === allTechOptions[0]) &&
-        (entry.difficulty === difficultySelect.value ||
-          difficultySelect.value === allDifficultyOptions[0])
+        (entry.category === currentCategoryValue ||
+          currentCategoryValue === allCategoryOptions[0]) &&
+        (entry.topic === currentTopicValue ||
+          currentTopicValue === allTopicOptions[0]) &&
+        (entry.tech.includes(currentTechValue) ||
+          currentTechValue === allTechOptions[0]) &&
+        (entry.difficulty === currentDifficultyValue ||
+          currentDifficultyValue === allDifficultyOptions[0]) &&
+        (currentKeywordValue === '' ||
+          hasKeywordMatch(entry))
       );
     });
+  }
+
+  function hasKeywordMatch(entry) {
+    let keywords = filterOutStopWords(currentKeywordValue.split(' '));
+    keywords.forEach(keyword => {
+      if (entry.title.toLowerCase().includes(keyword.toLowerCase())) return true;
+    });
+    return false;
   }
 
   function updateResults(isReset = false) {
@@ -319,6 +332,7 @@ function init() {
 
   function updateSelects(isReset = false) {
     isReset ? resetSelectOptions() : filterSelectOptions();
+    isReset && (keywordInput.value = '');
     populateSelects();
   }
 
@@ -389,12 +403,13 @@ function init() {
       e.target == categorySelect ||
       e.target == topicSelect ||
       e.target == techSelect ||
-      e.target == difficultySelect
+      e.target == difficultySelect ||
+      e.target == keywordInput
     ) {
       if (e.target.value.includes("Filter") || e.target.value === "None") {
         e.target.style.backgroundColor = noSelectionBackgroundColor;
         e.target.style.color = noSelectionColor;
-      } else {
+      } else if (e.target != keywordInput) {
         e.target.style.backgroundColor = selectionBackgroundColor;
         e.target.style.color = selectionColor;      
       }
@@ -403,11 +418,13 @@ function init() {
       currentTopicValue = topicSelect.value;
       currentTechValue = techSelect.value;
       currentDifficultyValue = difficultySelect.value;
+      currentKeywordValue = keywordInput.value;
       updateSelects();
       categorySelect.value = currentCategoryValue;
       topicSelect.value = currentTopicValue;
       techSelect.value = currentTechValue;
       difficultySelect.value = currentDifficultyValue;
+      keywordInput.value = currentKeywordValue;
     }
   });
 
@@ -472,3 +489,194 @@ function init() {
     }
   });
 }
+
+function filterOutStopWords(arr) {
+  let stopWords = [
+    "a",
+    "about",
+    "above",
+    "actually",
+    "after",
+    "again",
+    "against",
+    "all",
+    "almost",
+    "also",
+    "although",
+    "always",
+    "am",
+    "an",
+    "and",
+    "any",
+    "are",
+    "as",
+    "at",
+    "be",
+    "became",
+    "become",
+    "because",
+    "been",
+    "before",
+    "being",
+    "below",
+    "between",
+    "both",
+    "but",
+    "by",
+    "can",
+    "could",
+    "did",
+    "do",
+    "does",
+    "doing",
+    "down",
+    "during",
+    "each",
+    "either",
+    "else",
+    "few",
+    "for",
+    "from",
+    "further",
+    "had",
+    "has",
+    "have",
+    "having",
+    "he",
+    "he'd",
+    "he'll",
+    "hence",
+    "he's",
+    "her",
+    "here",
+    "here's",
+    "hers",
+    "herself",
+    "him",
+    "himself",
+    "his",
+    "how",
+    "how's",
+    "I",
+    "I'd",
+    "I'll",
+    "I'm",
+    "I've",
+    "if",
+    "in",
+    "into",
+    "is",
+    "it",
+    "it's",
+    "its",
+    "itself",
+    "just",
+    "let's",
+    "may",
+    "maybe",
+    "me",
+    "might",
+    "mine",
+    "more",
+    "most",
+    "must",
+    "my",
+    "myself",
+    "neither",
+    "nor",
+    "not",
+    "of",
+    "oh",
+    "on",
+    "once",
+    "only",
+    "ok",
+    "or",
+    "other",
+    "ought",
+    "our",
+    "ours",
+    "ourselves",
+    "out",
+    "over",
+    "own",
+    "same",
+    "she",
+    "she'd",
+    "she'll",
+    "she's",
+    "should",
+    "so",
+    "some",
+    "such",
+    "than",
+    "that",
+    "that's",
+    "the",
+    "their",
+    "theirs",
+    "them",
+    "themselves",
+    "then",
+    "there",
+    "there's",
+    "these",
+    "they",
+    "they'd",
+    "they'll",
+    "they're",
+    "they've",
+    "this",
+    "those",
+    "through",
+    "to",
+    "too",
+    "under",
+    "until",
+    "up",
+    "very",
+    "was",
+    "we",
+    "we'd",
+    "we'll",
+    "we're",
+    "we've",
+    "were",
+    "what",
+    "what's",
+    "when",
+    "whenever",
+    "when's",
+    "where",
+    "whereas",
+    "wherever",
+    "where's",
+    "whether",
+    "which",
+    "while",
+    "who",
+    "whoever",
+    "who's",
+    "whose",
+    "whom",
+    "why",
+    "why's",
+    "will",
+    "with",
+    "within",
+    "would",
+    "yes",
+    "yet",
+    "you",
+    "you'd",
+    "you'll",
+    "you're",
+    "you've",
+    "your",
+    "yours",
+    "yourself",
+    "yourselves"
+  ];
+  return arr.filter(keyword => !stopWords.includes(keyword));
+}
+
