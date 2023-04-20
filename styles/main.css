@@ -217,13 +217,26 @@ button {
   width: 100px;
 }
 
+input {
+  padding: 4px;
+  border-radius: 4px;
+}
+
+input::-moz-placeholder {
+  color: #4790ba;
+}
+
+input::placeholder {
+  color: #4790ba;
+}
+
 select, button {
   border-radius: 4px;
   cursor: pointer;
 }
 
-select {
-  width: calc((100% - 140px) / 4);
+select, input, #reset-button {
+  width: calc((100% - 40px) / 5);
 }
 
 .text-light {
@@ -445,9 +458,9 @@ select {
   margin-bottom: 15px;
 }
 
-.resource-select {
+.resource-input {
   background-color: #a8d3ec;
-  color: #0b5077;
+  color: #4790ba;
   font-family: "Quicksand", sans-serif;
   height: 24px;
   border: none;
@@ -566,17 +579,20 @@ select {
 }
 
 @media screen and (min-width: 1100px) {
+  select, input, #reset-button {
+    width: calc((100% - 50px) / 6);
+  }
   #results-area {
     -moz-columns: 4;
          columns: 4;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   main {
     margin-bottom: 60px;
   }
-  select {
-    width: calc((100% - 30px) / 4);
+  select, input, #reset-button {
+    width: calc((100% - 20px) / 3);
   }
   #results-area {
     -moz-columns: 2;
@@ -585,7 +601,7 @@ select {
 }
 @media screen and (max-width: 600px) {
   button,
-  select {
+  select, input, #reset-button {
     width: calc((100% - 10px) / 2);
   }
   .results-button-row {
@@ -603,9 +619,11 @@ select {
   }
 }
 @media screen and (max-width: 400px) {
-  button,
-  select {
+  select, input, #reset-button {
     width: 100%;
+  }
+  button {
+    width: calc((100% - 10px) / 2);
   }
   .results-button-row {
     flex-direction: column;
