@@ -7,24 +7,29 @@ window.addEventListener('load', () => init());
 // TODO: Create and add some Java content
 
 function init() {
-
   let difficultyDisplayText = {
-    "None": "Filter by difficulty...",
-    "Basic": "Total N00b ¯\\_(ツ)_/¯",
-    "Moderate": "Tell Me More...",
-    "Challenging": "Challenge accepted.",
-    "Extra Challenging": "To Infinity, and Beyond!",
+    None: 'Filter by difficulty...',
+    Basic: 'Total N00b ¯\\_(ツ)_/¯',
+    Moderate: 'Tell Me More...',
+    Challenging: 'Challenge accepted.',
+    'Extra Challenging': 'To Infinity, and Beyond!',
   };
 
-  let selectionBackgroundColor = "#0b5077";
-  let selectionColor = "white";
-  let noSelectionBackgroundColor = "#a8d3ec";
-  let noSelectionColor = "#4790ba";
+  let selectionBackgroundColor = '#0b5077';
+  let selectionColor = 'white';
+  let noSelectionBackgroundColor = '#a8d3ec';
+  let noSelectionColor = '#4790ba';
 
   let allCategoryOptions = ['Filter by category...'];
   let allTopicOptions = [];
   let allTechOptions = [];
-  let allDifficultyOptions = ["None", "Basic", "Moderate", "Challenging", "Extra Challenging"];
+  let allDifficultyOptions = [
+    'None',
+    'Basic',
+    'Moderate',
+    'Challenging',
+    'Extra Challenging',
+  ];
 
   let currentCategoryOptions = ['Filter by category...'];
   let currentTopicOptions = ['Filter by topic...'];
@@ -35,7 +40,7 @@ function init() {
   let currentTopicValue;
   let currentTechValue;
   let currentDifficultyValue;
-  let currentKeywordValue;
+  let currentKeywordValue = '';
 
   let allEntries = [];
   let currentEntries = [];
@@ -95,7 +100,7 @@ function init() {
             allTechOptions.push(tech);
           }
         });
-      } 
+      }
     });
     allTopicOptions.sort();
     allTopicOptions.unshift('Filter by topic...');
@@ -176,7 +181,9 @@ function init() {
         <div>
           <p class="resource-subheader">Difficulty</p>
           <div class="resource-list">
-            <p class="resource-list-item">${difficultyDisplayText[entry.difficulty]} (${entry.difficulty})</p>
+            <p class="resource-list-item">${
+              difficultyDisplayText[entry.difficulty]
+            } (${entry.difficulty})</p>
           </div>
         </div>
       `;
@@ -237,26 +244,34 @@ function init() {
   function getFilteredEntries() {
     return allEntries.filter(entry => {
       return (
-        (entry.category === currentCategoryValue ||
-          currentCategoryValue === allCategoryOptions[0]) &&
-        (entry.topic === currentTopicValue ||
-          currentTopicValue === allTopicOptions[0]) &&
-        (entry.tech.includes(currentTechValue) ||
-          currentTechValue === allTechOptions[0]) &&
-        (entry.difficulty === currentDifficultyValue ||
-          currentDifficultyValue === allDifficultyOptions[0]) &&
-        (currentKeywordValue === '' ||
-          hasKeywordMatch(entry))
+        (entry.category === categorySelect.value ||
+          categorySelect.value === allCategoryOptions[0]) &&
+        (entry.topic === topicSelect.value ||
+          topicSelect.value === allTopicOptions[0]) &&
+        (entry.tech.includes(techSelect.value) ||
+          techSelect.value === allTechOptions[0]) &&
+        (entry.difficulty === difficultySelect.value ||
+          difficultySelect.value === allDifficultyOptions[0]) &&
+        (keywordInput.value === '' || hasKeywordMatch(entry))
       );
     });
   }
 
   function hasKeywordMatch(entry) {
-    let keywords = filterOutStopWords(currentKeywordValue.split(' '));
+    let keywords = filterOutStopWords(keywordInput.value.split(' '));
+    let hasMatch = false;
     keywords.forEach(keyword => {
-      if (entry.title.toLowerCase().includes(keyword.toLowerCase())) return true;
+      keyword = keyword.toLowerCase();
+      if (
+        entry.title.toLowerCase().includes(keyword) ||
+        entry.topic.toLowerCase().includes(keyword) ||
+        entry.description.toLowerCase().includes(keyword) ||
+        entry.tech.map(tech => tech.toLowerCase()).includes(keyword)
+      ) {
+        hasMatch = true;
+      }
     });
-    return false;
+    return hasMatch;
   }
 
   function updateResults(isReset = false) {
@@ -298,8 +313,8 @@ function init() {
       if (!tempDiffOpts.includes(entry.difficulty)) {
         tempDiffOpts.push(entry.difficulty);
       }
-    })
-    
+    });
+
     currentCategoryOptions.unshift('Filter by category...');
     currentTopicOptions.sort();
     currentTopicOptions.unshift('Filter by topic...');
@@ -307,7 +322,7 @@ function init() {
     currentTechOptions.unshift('Filter by tech...');
     currentDifficultyOptions = allDifficultyOptions.filter(option => {
       return tempDiffOpts.includes(option);
-    })
+    });
     currentDifficultyOptions.unshift('None');
   }
 
@@ -386,46 +401,80 @@ function init() {
       toggleDisplay(false);
     } else if (e.target.id === 'reset-button') {
       e.preventDefault();
-      let allSelects = [categorySelect, topicSelect, techSelect, difficultySelect];
-      let allOptions = [allCategoryOptions, allTopicOptions, allTechOptions, allDifficultyOptions];
+      let allSelects = [
+        categorySelect,
+        topicSelect,
+        techSelect,
+        difficultySelect,
+      ];
+      let allOptions = [
+        allCategoryOptions,
+        allTopicOptions,
+        allTechOptions,
+        allDifficultyOptions,
+      ];
       allSelects.forEach((select, i) => {
-        select.value = allOptions[i][0];        
+        select.value = allOptions[i][0];
         select.style.backgroundColor = noSelectionBackgroundColor;
         select.style.color = noSelectionColor;
       });
       updateResults(true);
+      currentKeywordValue = '';
+      keywordInput.style.backgroundColor = noSelectionBackgroundColor;
+      keywordInput.style.color = noSelectionColor;
       updateSelects(true);
     }
   });
+
+  function updateEverything() {
+    currentCategoryValue = categorySelect.value;
+    currentTopicValue = topicSelect.value;
+    currentTechValue = techSelect.value;
+    currentDifficultyValue = difficultySelect.value;
+    currentKeywordValue = keywordInput.value;
+    updateResults();
+    updateSelects();
+    categorySelect.value = currentCategoryValue;
+    topicSelect.value = currentTopicValue;
+    techSelect.value = currentTechValue;
+    difficultySelect.value = currentDifficultyValue;
+    keywordInput.value = currentKeywordValue;
+  }
 
   document.addEventListener('change', e => {
     if (
       e.target == categorySelect ||
       e.target == topicSelect ||
       e.target == techSelect ||
-      e.target == difficultySelect ||
-      e.target == keywordInput
+      e.target == difficultySelect
     ) {
-      if (e.target.value.includes("Filter") || e.target.value === "None") {
+      if (e.target.value.includes('Filter') || e.target.value === 'None') {
         e.target.style.backgroundColor = noSelectionBackgroundColor;
         e.target.style.color = noSelectionColor;
-      } else if (e.target != keywordInput) {
+      } else {
         e.target.style.backgroundColor = selectionBackgroundColor;
-        e.target.style.color = selectionColor;      
+        e.target.style.color = selectionColor;
       }
-      updateResults();
-      currentCategoryValue = categorySelect.value;
-      currentTopicValue = topicSelect.value;
-      currentTechValue = techSelect.value;
-      currentDifficultyValue = difficultySelect.value;
-      currentKeywordValue = keywordInput.value;
-      updateSelects();
-      categorySelect.value = currentCategoryValue;
-      topicSelect.value = currentTopicValue;
-      techSelect.value = currentTechValue;
-      difficultySelect.value = currentDifficultyValue;
-      keywordInput.value = currentKeywordValue;
+      updateEverything();
     }
+  });
+
+  document.addEventListener('input', e => {
+    if (e.target == keywordInput) {
+      if (e.target.value === '') {
+        e.target.style.backgroundColor = noSelectionBackgroundColor;
+        e.target.style.color = noSelectionColor;
+      } else {
+        e.target.style.backgroundColor = selectionBackgroundColor;
+        e.target.style.color = selectionColor;
+      }
+      updateEverything();
+    }
+  });
+
+  // prevent Enter key from refreshing page
+  document.addEventListener('submit', e => { 
+    e.preventDefault(); 
   });
 
   // Handle expand and collapse
@@ -492,191 +541,190 @@ function init() {
 
 function filterOutStopWords(arr) {
   let stopWords = [
-    "a",
-    "about",
-    "above",
-    "actually",
-    "after",
-    "again",
-    "against",
-    "all",
-    "almost",
-    "also",
-    "although",
-    "always",
-    "am",
-    "an",
-    "and",
-    "any",
-    "are",
-    "as",
-    "at",
-    "be",
-    "became",
-    "become",
-    "because",
-    "been",
-    "before",
-    "being",
-    "below",
-    "between",
-    "both",
-    "but",
-    "by",
-    "can",
-    "could",
-    "did",
-    "do",
-    "does",
-    "doing",
-    "down",
-    "during",
-    "each",
-    "either",
-    "else",
-    "few",
-    "for",
-    "from",
-    "further",
-    "had",
-    "has",
-    "have",
-    "having",
-    "he",
+    'a',
+    'about',
+    'above',
+    'actually',
+    'after',
+    'again',
+    'against',
+    'all',
+    'almost',
+    'also',
+    'although',
+    'always',
+    'am',
+    'an',
+    'and',
+    'any',
+    'are',
+    'as',
+    'at',
+    'be',
+    'became',
+    'become',
+    'because',
+    'been',
+    'before',
+    'being',
+    'below',
+    'between',
+    'both',
+    'but',
+    'by',
+    'can',
+    'could',
+    'did',
+    'do',
+    'does',
+    'doing',
+    'down',
+    'during',
+    'each',
+    'either',
+    'else',
+    'few',
+    'for',
+    'from',
+    'further',
+    'had',
+    'has',
+    'have',
+    'having',
+    'he',
     "he'd",
     "he'll",
-    "hence",
+    'hence',
     "he's",
-    "her",
-    "here",
+    'her',
+    'here',
     "here's",
-    "hers",
-    "herself",
-    "him",
-    "himself",
-    "his",
-    "how",
+    'hers',
+    'herself',
+    'him',
+    'himself',
+    'his',
+    'how',
     "how's",
-    "I",
+    'I',
     "I'd",
     "I'll",
     "I'm",
     "I've",
-    "if",
-    "in",
-    "into",
-    "is",
-    "it",
+    'if',
+    'in',
+    'into',
+    'is',
+    'it',
     "it's",
-    "its",
-    "itself",
-    "just",
+    'its',
+    'itself',
+    'just',
     "let's",
-    "may",
-    "maybe",
-    "me",
-    "might",
-    "mine",
-    "more",
-    "most",
-    "must",
-    "my",
-    "myself",
-    "neither",
-    "nor",
-    "not",
-    "of",
-    "oh",
-    "on",
-    "once",
-    "only",
-    "ok",
-    "or",
-    "other",
-    "ought",
-    "our",
-    "ours",
-    "ourselves",
-    "out",
-    "over",
-    "own",
-    "same",
-    "she",
+    'may',
+    'maybe',
+    'me',
+    'might',
+    'mine',
+    'more',
+    'most',
+    'must',
+    'my',
+    'myself',
+    'neither',
+    'nor',
+    'not',
+    'of',
+    'oh',
+    'on',
+    'once',
+    'only',
+    'ok',
+    'or',
+    'other',
+    'ought',
+    'our',
+    'ours',
+    'ourselves',
+    'out',
+    'over',
+    'own',
+    'same',
+    'she',
     "she'd",
     "she'll",
     "she's",
-    "should",
-    "so",
-    "some",
-    "such",
-    "than",
-    "that",
+    'should',
+    'so',
+    'some',
+    'such',
+    'than',
+    'that',
     "that's",
-    "the",
-    "their",
-    "theirs",
-    "them",
-    "themselves",
-    "then",
-    "there",
+    'the',
+    'their',
+    'theirs',
+    'them',
+    'themselves',
+    'then',
+    'there',
     "there's",
-    "these",
-    "they",
+    'these',
+    'they',
     "they'd",
     "they'll",
     "they're",
     "they've",
-    "this",
-    "those",
-    "through",
-    "to",
-    "too",
-    "under",
-    "until",
-    "up",
-    "very",
-    "was",
-    "we",
+    'this',
+    'those',
+    'through',
+    'to',
+    'too',
+    'under',
+    'until',
+    'up',
+    'very',
+    'was',
+    'we',
     "we'd",
     "we'll",
     "we're",
     "we've",
-    "were",
-    "what",
+    'were',
+    'what',
     "what's",
-    "when",
-    "whenever",
+    'when',
+    'whenever',
     "when's",
-    "where",
-    "whereas",
-    "wherever",
+    'where',
+    'whereas',
+    'wherever',
     "where's",
-    "whether",
-    "which",
-    "while",
-    "who",
-    "whoever",
+    'whether',
+    'which',
+    'while',
+    'who',
+    'whoever',
     "who's",
-    "whose",
-    "whom",
-    "why",
+    'whose',
+    'whom',
+    'why',
     "why's",
-    "will",
-    "with",
-    "within",
-    "would",
-    "yes",
-    "yet",
-    "you",
+    'will',
+    'with',
+    'within',
+    'would',
+    'yes',
+    'yet',
+    'you',
     "you'd",
     "you'll",
     "you're",
     "you've",
-    "your",
-    "yours",
-    "yourself",
-    "yourselves"
+    'your',
+    'yours',
+    'yourself',
+    'yourselves',
   ];
   return arr.filter(keyword => !stopWords.includes(keyword));
 }
-
