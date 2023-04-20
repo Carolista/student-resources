@@ -4,6 +4,9 @@ window.addEventListener('load', () => init());
 // TODO: Add search feature - handle spaces and partial matches
 // TODO: Display a list of recently visited links, e.g. Document for How to Make the Most of Slack, or Starter Code for Next-Level Loops - maybe?
 
+// TODO: Finish misc. React, Angular, Git exercises and add
+// TODO: Create and add some Java content
+
 function init() {
 
   let difficultyDisplayText = {
@@ -389,7 +392,7 @@ function init() {
       e.target == techSelect ||
       e.target == difficultySelect
     ) {
-      if (e.target.value.includes("Filter")) {
+      if (e.target.value.includes("Filter") || e.target.value === "None") {
         e.target.style.backgroundColor = noSelectionBackgroundColor;
         e.target.style.color = noSelectionColor;
       } else {
