@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import 'variables.scss';
 @import 'animations.scss';
-@import 'backdrop.scss';
 @import 'tooltips.scss';
 
 // TODO: update z-indices everywhere to simplify
@@ -93,7 +92,6 @@ button {
 }
 
 input {
-  // color: $darker-accent-color;
   padding: 4px;
   border-radius: 4px;
 }
