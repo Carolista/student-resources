@@ -121,8 +121,8 @@ a:hover .tooltip-bottom {
 }
 
 .tooltip-wider {
-  left: calc(50% - 140px);
-  width: 280px;
+  left: calc(50% - 150px);
+  width: 300px;
 }
 
 .tooltip-link, .tooltip-link:visited {
@@ -150,7 +150,7 @@ a:hover .tooltip-bottom {
 }
 
 html {
-  font-size: 10pt;
+  font-size: 12pt;
   min-height: 100%;
 }
 
@@ -214,7 +214,13 @@ a:visited {
 }
 
 button {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9rem;
   width: 100px;
+  height: 24px;
+  padding: 0px 8px;
+  outline: none;
+  border: none;
 }
 
 input {
@@ -235,7 +241,8 @@ select, button {
   cursor: pointer;
 }
 
-select, input, #reset-button {
+select, input {
+  font-size: 1rem;
   width: calc((100% - 40px) / 5);
 }
 
@@ -272,7 +279,7 @@ select, input, #reset-button {
   font-weight: 400;
   font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   height: 80px;
   width: 80px;
   padding: 0px 10px;
@@ -284,7 +291,7 @@ select, input, #reset-button {
 
 .hand-pointing {
   color: #1e6d9b;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-left: 8px;
 }
 
@@ -489,20 +496,16 @@ select, input, #reset-button {
   gap: 10px;
 }
 
-.resource-button {
-  background-color: #135b85;
+#reset-button {
+  background-color: #bb2f00;
   color: #fff;
-  font-family: "Quicksand", sans-serif;
-  height: 24px;
-  padding: 0px 8px;
-  outline: none;
-  border: none;
+  width: calc((100% - 40px) / 5);
 }
-.resource-button:hover {
-  background-color: #1e6d9b;
+#reset-button:hover {
+  background-color: #d14415;
 }
-.resource-button:active {
-  background-color: #0b5077;
+#reset-button:active {
+  background-color: #9e2800;
 }
 
 .muted-button {
@@ -514,17 +517,6 @@ select, input, #reset-button {
 }
 .muted-button:active {
   background-color: #1e6d9b;
-}
-
-.reset-button {
-  background-color: #bb2f00;
-  color: #fff;
-}
-.reset-button:hover {
-  background-color: #d14415;
-}
-.reset-button:active {
-  background-color: #9e2800;
 }
 
 .new {
@@ -577,7 +569,7 @@ select, input, #reset-button {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1400px) {
   select, input, #reset-button {
     width: calc((100% - 50px) / 6);
   }
@@ -586,7 +578,7 @@ select, input, #reset-button {
          columns: 4;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   main {
     margin-bottom: 60px;
   }
@@ -598,7 +590,7 @@ select, input, #reset-button {
          columns: 2;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   button,
   select, input, #reset-button {
     width: calc((100% - 10px) / 2);
@@ -617,7 +609,7 @@ select, input, #reset-button {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   select, input, #reset-button {
     width: 100%;
   }
