@@ -493,37 +493,10 @@ function init() {
         collapseContents(id);
       }
       let secondary = document.getElementById(`${id}-secondary`);
-      let maxHeight = 0;
-      if (document.getElementById(`${id}-desc`)) {
-        let desc = document.getElementById(`${id}-desc`);
-        maxHeight = Math.round(desc.innerHTML.length / 3);
-      } else {
-        maxHeight = 1000;
-      }
-      let transition =
-        maxHeight / 300 > 1 ? 1 : Math.round((maxHeight / 300) * 10) / 10;
+      let transition = secondary.scrollHeight / 300;
       arrowIcon.style.transition = `transform ${transition + 's'}`;
       secondary.style.transition = `max-height ${transition + 's'}`;
-      secondary.style.maxHeight === maxHeight + 'px'
-        ? (secondary.style.maxHeight = '0px')
-        : (secondary.style.maxHeight = maxHeight + 'px');
-    }
-  });
-
-  // This will correct things if rapid clicking gets the class assignments out of sync
-  document.addEventListener('mouseover', e => {
-    if (
-      e.target.classList.contains('content-click-bar') ||
-      e.target.classList.contains('content-subheader') ||
-      e.target.classList.contains('content-arrow')
-    ) {
-      let id = e.target.id.slice(0, e.target.id.indexOf('-'));
-      let arrowIcon = document.getElementById(`${id}-arrow-icon`);
-      if (arrowIcon.style.transform === 'translateY(0px) rotate(180deg)') {
-        expandContents(id);
-      } else {
-        collapseContents(id);
-      }
+      secondary.style.maxHeight ? secondary.style.maxHeight = null : secondary.style.maxHeight = secondary.scrollHeight + 'px';
     }
   });
 
