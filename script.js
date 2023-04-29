@@ -496,7 +496,7 @@ function init() {
       let transition = secondary.scrollHeight / 300;
       arrowIcon.style.transition = `transform ${transition + 's'}`;
       secondary.style.transition = `max-height ${transition + 's'}`;
-      secondary.style.maxHeight ? secondary.style.maxHeight = null : secondary.style.maxHeight = secondary.scrollHeight + 'px';
+      parseInt(secondary.style.maxHeight) > 0 ? secondary.style.maxHeight = 0 + 'px' : secondary.style.maxHeight = secondary.scrollHeight + 'px';
     }
   });
 
