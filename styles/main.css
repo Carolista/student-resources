@@ -305,8 +305,11 @@ select, input {
   font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
-  height: 50px;
-  padding: 0px 18px 0px 14px;
+  padding: 8px 18px 8px 14px;
+}
+
+#cwc-logo {
+  opacity: 0.9;
 }
 
 #page-container {
@@ -428,7 +431,6 @@ select, input {
 .content-secondary {
   display: relative;
   background-color: #fff;
-  max-height: 0px;
   overflow: hidden;
 }
 
