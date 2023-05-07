@@ -15,10 +15,10 @@ function init() {
     'Extra Challenging': 'To Infinity, and Beyond!',
   };
 
-  let selectionBackgroundColor = '#0b5077';
+  let selectionBackgroundColor = '#013451';
   let selectionColor = 'white';
-  let noSelectionBackgroundColor = '#a8d3ec';
-  let noSelectionColor = '#4790ba';
+  let noSelectionBackgroundColor = '#c8daef';
+  let noSelectionColor = '#5188c3';
 
   let allCategoryOptions = ['Filter by category...'];
   let allTopicOptions = [];

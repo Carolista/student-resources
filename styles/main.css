@@ -44,7 +44,7 @@
   position: absolute;
   bottom: 100%;
   left: calc(50% - 60px);
-  background: #135b85;
+  background: #406894;
   color: #fff;
   font-family: "Quicksand", sans-serif;
   text-transform: none;
@@ -71,7 +71,7 @@
   left: calc(50% - 5px);
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 10px solid #135b85;
+  border-top: 10px solid #406894;
 }
 
 .tooltip-container:hover .tooltip,
@@ -84,7 +84,7 @@ a:hover .tooltip {
   position: absolute;
   top: 100%;
   left: calc(50% - 60px);
-  background: #135b85;
+  background: #406894;
   color: #fff;
   font-family: "Quicksand", sans-serif;
   text-transform: none;
@@ -111,7 +111,7 @@ a:hover .tooltip {
   left: calc(50% - 5px);
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-bottom: 10px solid #135b85;
+  border-bottom: 10px solid #406894;
 }
 
 .tooltip-container:hover .tooltip-bottom,
@@ -126,12 +126,12 @@ a:hover .tooltip-bottom {
 }
 
 .tooltip-link, .tooltip-link:visited {
-  color: #70a9c9;
+  color: #9fbee1;
   font-weight: 600;
 }
 
 .tooltip-link:hover {
-  color: #a8d3ec;
+  color: #c8daef;
 }
 
 /*
@@ -202,15 +202,15 @@ p {
 }
 
 a {
-  color: #1e6d9b;
+  color: #5188c3;
   font-weight: 600;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
-  color: #4790ba;
+  color: #84afdd;
 }
 a:visited {
-  color: #135b85;
+  color: #406894;
 }
 
 button {
@@ -229,11 +229,11 @@ input {
 }
 
 input::-moz-placeholder {
-  color: #4790ba;
+  color: #84afdd;
 }
 
 input::placeholder {
-  color: #4790ba;
+  color: #84afdd;
 }
 
 select, button {
@@ -257,11 +257,13 @@ select, input {
 #backdrop-container {
   position: fixed;
   display: block;
+  top: 0;
+  right: 0;
   background-image: url("../images/geo-bkg.jpeg");
-  opacity: 0.5;
-  filter: saturate(0.7) hue-rotate(-15deg);
+  opacity: 0.3;
+  filter: hue-rotate(-5deg);
   height: 100vh;
-  width: 100vw;
+  width: 120vw;
 }
 
 #top-sticky {
@@ -290,7 +292,7 @@ select, input {
 }
 
 .hand-pointing {
-  color: #1e6d9b;
+  color: #5188c3;
   font-size: 1.3rem;
   margin-left: 8px;
 }
@@ -299,7 +301,7 @@ select, input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #063753;
+  background-color: #013451;
   color: #fff;
   font-weight: 200;
   font-family: "Lexend Deca", sans-serif;
@@ -309,7 +311,7 @@ select, input {
 }
 
 #cwc-logo {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 #page-container {
@@ -325,7 +327,7 @@ select, input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #135b85;
+  background-color: #406894;
   color: #fff;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 300;
@@ -401,7 +403,7 @@ select, input {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-image: linear-gradient(to bottom, #063753 0, #0b5077 3%, #135b85 18%, #135b85 100%);
+  background-image: linear-gradient(to bottom, #013451 0, #233f5b 3%, #406894 18%, #406894 100%);
   color: #fff;
   height: 40px;
   width: 100%;
@@ -410,7 +412,7 @@ select, input {
   cursor: pointer;
 }
 .content-click-bar:hover {
-  background-image: linear-gradient(to bottom, #063753 0, #0b5077 3%, #0b5077 10%, #135b85 30%, #135b85 100%);
+  background-image: linear-gradient(to bottom, #013451 0, #233f5b 3%, #233f5b 10%, #406894 30%, #406894 100%);
 }
 
 .content-arrow {
@@ -468,13 +470,17 @@ select, input {
 }
 
 .resource-input {
-  background-color: #a8d3ec;
-  color: #4790ba;
+  background-color: #c8daef;
+  color: #84afdd;
   font-family: "Quicksand", sans-serif;
   height: 24px;
   border: none;
   outline: none;
   padding-right: 4px;
+}
+
+#keyword-input:focus {
+  outline: 1px solid #5188c3;
 }
 
 .results-button-row {
@@ -485,7 +491,7 @@ select, input {
 }
 
 .results-count {
-  color: #135b85;
+  color: #406894;
   font-weight: 500;
   line-height: 100%;
   margin: 10px 0px 5px;
@@ -512,14 +518,14 @@ select, input {
 }
 
 .muted-button {
-  background-color: #4790ba;
+  background-color: #84afdd;
   color: #fff;
 }
 .muted-button:hover {
-  background-color: #70a9c9;
+  background-color: #9fbee1;
 }
 .muted-button:active {
-  background-color: #1e6d9b;
+  background-color: #5188c3;
 }
 
 .new {
