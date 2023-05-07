@@ -164,77 +164,81 @@
   },
   {
     "id": 201,
-    "title": "MySpace Fun Facts",
+    "title": "JavaScript Basics: Variables",
     "category": "Examples & Exercises by Topic",
     "topic": "Data & Variables",
     "description": "Practice saving values with different data types and formatting output.",
     "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/MySpaceFunFacts-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/MySpaceFunFacts" }
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/4SDBCWeThBc" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CodeWithCarrie/JSVariables" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CodeWithCarrie/JSVariables-Solution" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-14",
-    "updateDate": "",
+    "updateDate": "2023-05-06",
     "difficulty": "Basic",
-    "image": "myspace-fun-facts.png",
+    "image": "js-variables.png",
     "isPending": false
   },
   {
     "id": 202,
-    "title": "Mad Libs",
+    "title": "JavaScript Basics: Mad Libs",
     "category": "Examples & Exercises by Topic",
     "topic": "Data & Variables",
-    "description": "Have a little fun telling a wacky story while practicing with variables and formatting in the console.",
+    "description": "Have a little fun telling a silly story while practicing with variables.",
     "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/MadLibs" }
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/PoZwDM2cOmY" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CodeWithCarrie/JSMadLibs" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-08",
-    "updateDate": "",
+    "updateDate": "2023-05-06",
     "difficulty": "Basic",
-    "image": "mad-libs.png",
+    "image": "js-mad-libs.png",
     "isPending": false
   },
   {
     "id": 203,
-    "title": "Can I Get Some Input?",
+    "title": "JavaScript Basics: Getting User Input",
     "category": "Examples & Exercises by Topic",
     "topic": "Data & Variables",
     "description": "Import readline-sync & get user input.",
     "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/GettingInput-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/GettingInput" }
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/AToquuD9z_U" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CodeWithCarrie/JSUserInput" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CodeWithCarrie/JSUserInput-Solution" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2021-03-11",
-    "updateDate": "",
+    "updateDate": "2023-05-06",
     "difficulty": "Basic",
-    "image": "getting-user-input.png",
+    "image": "js-user-input.png",
     "isPending": false
   },
   {
     "id": 204,
-    "title": "Data Type Conversions",
+    "title": "JavaScript Basics: Data Type Conversions",
     "category": "Examples & Exercises by Topic",
     "topic": "Data & Variables",
     "description": "Learn how to convert between different data types.",
     "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/DataTypeConversions-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/DataTypeConversions" }
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/4ecEb-w6SZ4" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CodeWithCarrie/JSDataTypeConversions" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CodeWithCarrie/JSDataTypeConversions-Solution" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2022-09-15",
-    "updateDate": "2023-04-14",
+    "updateDate": "2023-05-06",
     "difficulty": "Basic",
-    "image": "data-type-conversions.png",
+    "image": "js-data-type-conversions.png",
     "isPending": false
   },
   {
