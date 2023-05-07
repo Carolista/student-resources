@@ -125,11 +125,13 @@ select, input {
 #backdrop-container {
   position: fixed;
   display: block;
+  top: 0;
+  right: 0;
   background-image: url('../images/geo-bkg.jpeg');
-  opacity: 0.5;
-  filter: saturate(0.7) hue-rotate(-15deg);
+  opacity: 0.3;
+  filter: hue-rotate(-5deg);
   height: 100vh;
-  width: 100vw;
+  width: 120vw;
 }
 
 #top-sticky {
@@ -177,7 +179,7 @@ select, input {
 }
 
 #cwc-logo {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 #page-container {
@@ -352,6 +354,10 @@ select, input {
   border: none;
   outline: none;
   padding-right: 4px;
+}
+
+#keyword-input:focus {
+  outline: 1px solid $medium-accent-color;
 }
 
 .results-button-row {
