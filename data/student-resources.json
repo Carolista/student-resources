@@ -243,20 +243,22 @@
   },
   {
     "id": 211,
-    "title": "Cookies 'N' Cream",
+    "title": "JavaScript Basics: Intro to Conditionals",
     "category": "Examples & Exercises by Topic",
     "topic": "Conditionals",
     "description": "How to use booleans and conditional statements with if/else blocks to handle logic",
     "links": [
-      { "linkType": "Example Code", "name": "View Code", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" }
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/klwMpcAmddY" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CodeWithCarrie/JSConditionalsIntro" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CodeWithCarrie/JSConditionalsIntro-Solution" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-08",
-    "updateDate": "",
+    "updateDate": "2023-05-17",
     "difficulty": "Basic",
-    "image": "cookies-cream.png",
+    "image": "conditionals-intro.png",
     "isPending": false
   },
   {
@@ -264,18 +266,19 @@
     "title": "Terms & Conditions",
     "category": "Examples & Exercises by Topic",
     "topic": "Conditionals",
-    "description": "Practice writing conditional statements with if/else blocks and incorporating the && and || operators.",
+    "description": "Logical operators and more complex if/else statements.",
     "links": [
-      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://repl.it/@CarolineRose/TermsAndConditions-StarterCode" },
-      { "linkType": "Solution", "name": "Check Solution", "link": "https://repl.it/@CarolineRose/TermsAndConditions" }
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/BVsYxSkloGQ" },
+      { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CodeWithCarrie/JSMoreConditionals" },
+      { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CodeWithCarrie/JSMoreConditionals-Solution" }
     ],
     "tech": ["JavaScript"],
     "requirements": ["Replit Account"],
     "note": "",
     "releaseDate": "2020-10-14",
-    "updateDate": "",
+    "updateDate": "2023-05-17",
     "difficulty": "Basic",
-    "image": "terms-conditions.png",
+    "image": "more-conditionals.png",
     "isPending": false
   },
   {
