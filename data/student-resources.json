@@ -248,7 +248,7 @@
     "topic": "Conditionals",
     "description": "How to use booleans and conditional statements with if/else blocks to handle logic",
     "links": [
-      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/klwMpcAmddY" },
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/5xRO6Xgl79s" },
       { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CodeWithCarrie/JSConditionalsIntro" },
       { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CodeWithCarrie/JSConditionalsIntro-Solution" }
     ],
@@ -268,7 +268,7 @@
     "topic": "Conditionals",
     "description": "Logical operators and more complex if/else statements.",
     "links": [
-      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/BVsYxSkloGQ" },
+      { "linkType": "Video", "name": "Watch Tutorial", "link": "https://youtu.be/5_6Ds-0VoSw" },
       { "linkType": "Starter Code", "name": "Start Coding", "link": "https://replit.com/@CodeWithCarrie/JSMoreConditionals" },
       { "linkType": "Solution", "name": "Check Solution", "link": "https://replit.com/@CodeWithCarrie/JSMoreConditionals-Solution" }
     ],
